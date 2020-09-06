@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18F1828D250528F500264EFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1828C250528F500264EFC /* AppDelegate.swift */; };
+		18F1828F250528F500264EFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1828E250528F500264EFC /* SceneDelegate.swift */; };
+		18F18291250528F500264EFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F18290250528F500264EFC /* ViewController.swift */; };
+		18F18294250528F500264EFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F18292250528F500264EFC /* Main.storyboard */; };
+		18F18296250528FB00264EFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F18295250528FB00264EFC /* Assets.xcassets */; };
+		18F18299250528FB00264EFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F18297250528FB00264EFC /* LaunchScreen.storyboard */; };
+		18F182A4250528FC00264EFC /* FarawlahTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F182A3250528FC00264EFC /* FarawlahTests.swift */; };
+		18F182AF250528FC00264EFC /* FarawlahUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F182AE250528FC00264EFC /* FarawlahUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18F182A0250528FC00264EFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18F18281250528F500264EFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18F18288250528F500264EFC;
+			remoteInfo = Farawlah;
+		};
+		18F182AB250528FC00264EFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18F18281250528F500264EFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18F18288250528F500264EFC;
+			remoteInfo = Farawlah;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18F18289250528F500264EFC /* Farawlah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Farawlah.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F1828C250528F500264EFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18F1828E250528F500264EFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		18F18290250528F500264EFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18F18293250528F500264EFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18F18295250528FB00264EFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18F18298250528FB00264EFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18F1829A250528FB00264EFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18F1829F250528FC00264EFC /* FarawlahTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FarawlahTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F182A3250528FC00264EFC /* FarawlahTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarawlahTests.swift; sourceTree = "<group>"; };
+		18F182A5250528FC00264EFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18F182AA250528FC00264EFC /* FarawlahUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FarawlahUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F182AE250528FC00264EFC /* FarawlahUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarawlahUITests.swift; sourceTree = "<group>"; };
+		18F182B0250528FC00264EFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18F18286250528F500264EFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F1829C250528FC00264EFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F182A7250528FC00264EFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18F18280250528F500264EFC = {
+			isa = PBXGroup;
+			children = (
+				18F1828B250528F500264EFC /* Farawlah */,
+				18F182A2250528FC00264EFC /* FarawlahTests */,
+				18F182AD250528FC00264EFC /* FarawlahUITests */,
+				18F1828A250528F500264EFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18F1828A250528F500264EFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18F18289250528F500264EFC /* Farawlah.app */,
+				18F1829F250528FC00264EFC /* FarawlahTests.xctest */,
+				18F182AA250528FC00264EFC /* FarawlahUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18F1828B250528F500264EFC /* Farawlah */ = {
+			isa = PBXGroup;
+			children = (
+				18F1828C250528F500264EFC /* AppDelegate.swift */,
+				18F1828E250528F500264EFC /* SceneDelegate.swift */,
+				18F18290250528F500264EFC /* ViewController.swift */,
+				18F18292250528F500264EFC /* Main.storyboard */,
+				18F18295250528FB00264EFC /* Assets.xcassets */,
+				18F18297250528FB00264EFC /* LaunchScreen.storyboard */,
+				18F1829A250528FB00264EFC /* Info.plist */,
+			);
+			path = Farawlah;
+			sourceTree = "<group>";
+		};
+		18F182A2250528FC00264EFC /* FarawlahTests */ = {
+			isa = PBXGroup;
+			children = (
+				18F182A3250528FC00264EFC /* FarawlahTests.swift */,
+				18F182A5250528FC00264EFC /* Info.plist */,
+			);
+			path = FarawlahTests;
+			sourceTree = "<group>";
+		};
+		18F182AD250528FC00264EFC /* FarawlahUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18F182AE250528FC00264EFC /* FarawlahUITests.swift */,
+				18F182B0250528FC00264EFC /* Info.plist */,
+			);
+			path = FarawlahUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18F18288250528F500264EFC /* Farawlah */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18F182B3250528FC00264EFC /* Build configuration list for PBXNativeTarget "Farawlah" */;
+			buildPhases = (
+				18F18285250528F500264EFC /* Sources */,
+				18F18286250528F500264EFC /* Frameworks */,
+				18F18287250528F500264EFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Farawlah;
+			productName = Farawlah;
+			productReference = 18F18289250528F500264EFC /* Farawlah.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18F1829E250528FC00264EFC /* FarawlahTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18F182B6250528FC00264EFC /* Build configuration list for PBXNativeTarget "FarawlahTests" */;
+			buildPhases = (
+				18F1829B250528FC00264EFC /* Sources */,
+				18F1829C250528FC00264EFC /* Frameworks */,
+				18F1829D250528FC00264EFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18F182A1250528FC00264EFC /* PBXTargetDependency */,
+			);
+			name = FarawlahTests;
+			productName = FarawlahTests;
+			productReference = 18F1829F250528FC00264EFC /* FarawlahTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18F182A9250528FC00264EFC /* FarawlahUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18F182B9250528FC00264EFC /* Build configuration list for PBXNativeTarget "FarawlahUITests" */;
+			buildPhases = (
+				18F182A6250528FC00264EFC /* Sources */,
+				18F182A7250528FC00264EFC /* Frameworks */,
+				18F182A8250528FC00264EFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18F182AC250528FC00264EFC /* PBXTargetDependency */,
+			);
+			name = FarawlahUITests;
+			productName = FarawlahUITests;
+			productReference = 18F182AA250528FC00264EFC /* FarawlahUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18F18281250528F500264EFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = Tech_Tonic;
+				TargetAttributes = {
+					18F18288250528F500264EFC = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					18F1829E250528FC00264EFC = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 18F18288250528F500264EFC;
+					};
+					18F182A9250528FC00264EFC = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 18F18288250528F500264EFC;
+					};
+				};
+			};
+			buildConfigurationList = 18F18284250528F500264EFC /* Build configuration list for PBXProject "Farawlah" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18F18280250528F500264EFC;
+			productRefGroup = 18F1828A250528F500264EFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18F18288250528F500264EFC /* Farawlah */,
+				18F1829E250528FC00264EFC /* FarawlahTests */,
+				18F182A9250528FC00264EFC /* FarawlahUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18F18287250528F500264EFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F18299250528FB00264EFC /* LaunchScreen.storyboard in Resources */,
+				18F18296250528FB00264EFC /* Assets.xcassets in Resources */,
+				18F18294250528F500264EFC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F1829D250528FC00264EFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F182A8250528FC00264EFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18F18285250528F500264EFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F18291250528F500264EFC /* ViewController.swift in Sources */,
+				18F1828D250528F500264EFC /* AppDelegate.swift in Sources */,
+				18F1828F250528F500264EFC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F1829B250528FC00264EFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F182A4250528FC00264EFC /* FarawlahTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F182A6250528FC00264EFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F182AF250528FC00264EFC /* FarawlahUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18F182A1250528FC00264EFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18F18288250528F500264EFC /* Farawlah */;
+			targetProxy = 18F182A0250528FC00264EFC /* PBXContainerItemProxy */;
+		};
+		18F182AC250528FC00264EFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18F18288250528F500264EFC /* Farawlah */;
+			targetProxy = 18F182AB250528FC00264EFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18F18292250528F500264EFC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18F18293250528F500264EFC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18F18297250528FB00264EFC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18F18298250528FB00264EFC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18F182B1250528FC00264EFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18F182B2250528FC00264EFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18F182B4250528FC00264EFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RDRMVW96A6;
+				INFOPLIST_FILE = Farawlah/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TechTonic.Farawlah;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18F182B5250528FC00264EFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RDRMVW96A6;
+				INFOPLIST_FILE = Farawlah/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TechTonic.Farawlah;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18F182B7250528FC00264EFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RDRMVW96A6;
+				INFOPLIST_FILE = FarawlahTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TechTonic.FarawlahTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Farawlah.app/Farawlah";
+			};
+			name = Debug;
+		};
+		18F182B8250528FC00264EFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RDRMVW96A6;
+				INFOPLIST_FILE = FarawlahTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TechTonic.FarawlahTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Farawlah.app/Farawlah";
+			};
+			name = Release;
+		};
+		18F182BA250528FC00264EFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RDRMVW96A6;
+				INFOPLIST_FILE = FarawlahUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TechTonic.FarawlahUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Farawlah;
+			};
+			name = Debug;
+		};
+		18F182BB250528FC00264EFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RDRMVW96A6;
+				INFOPLIST_FILE = FarawlahUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TechTonic.FarawlahUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Farawlah;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18F18284250528F500264EFC /* Build configuration list for PBXProject "Farawlah" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F182B1250528FC00264EFC /* Debug */,
+				18F182B2250528FC00264EFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18F182B3250528FC00264EFC /* Build configuration list for PBXNativeTarget "Farawlah" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F182B4250528FC00264EFC /* Debug */,
+				18F182B5250528FC00264EFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18F182B6250528FC00264EFC /* Build configuration list for PBXNativeTarget "FarawlahTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F182B7250528FC00264EFC /* Debug */,
+				18F182B8250528FC00264EFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18F182B9250528FC00264EFC /* Build configuration list for PBXNativeTarget "FarawlahUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F182BA250528FC00264EFC /* Debug */,
+				18F182BB250528FC00264EFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18F18281250528F500264EFC /* Project object */;
+}
