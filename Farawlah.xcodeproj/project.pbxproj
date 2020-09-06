@@ -10,6 +10,13 @@
 		18EE719B25052A6E00F8FA73 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE719A25052A6E00F8FA73 /* MainViewController.swift */; };
 		18EE719F2505339200F8FA73 /* UIViewCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE719E2505339200F8FA73 /* UIViewCustom.swift */; };
 		18EE71A12505339B00F8FA73 /* UIButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE71A02505339B00F8FA73 /* UIButtonCustom.swift */; };
+		18EE71A42505459900F8FA73 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE71A32505459900F8FA73 /* ItemTableViewCell.swift */; };
+		18EE71A6250545B300F8FA73 /* LoginTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE71A5250545B300F8FA73 /* LoginTableViewCell.swift */; };
+		18EE71A8250545C000F8FA73 /* RegisterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE71A7250545C000F8FA73 /* RegisterTableViewCell.swift */; };
+		18EE71AA250545D400F8FA73 /* NSObject+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE71A9250545D400F8FA73 /* NSObject+Ext.swift */; };
+		18EE71AC2505465B00F8FA73 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE71AB2505465B00F8FA73 /* ListViewModel.swift */; };
+		18EE71B0250551D300F8FA73 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE71AF250551D300F8FA73 /* PopUpViewController.swift */; };
+		18EE71B22505553500F8FA73 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE71B12505553500F8FA73 /* UIViewController+Ext.swift */; };
 		18F1828D250528F500264EFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1828C250528F500264EFC /* AppDelegate.swift */; };
 		18F1828F250528F500264EFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1828E250528F500264EFC /* SceneDelegate.swift */; };
 		18F18294250528F500264EFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F18292250528F500264EFC /* Main.storyboard */; };
@@ -40,6 +47,13 @@
 		18EE719A25052A6E00F8FA73 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		18EE719E2505339200F8FA73 /* UIViewCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewCustom.swift; sourceTree = "<group>"; };
 		18EE71A02505339B00F8FA73 /* UIButtonCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonCustom.swift; sourceTree = "<group>"; };
+		18EE71A32505459900F8FA73 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		18EE71A5250545B300F8FA73 /* LoginTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewCell.swift; sourceTree = "<group>"; };
+		18EE71A7250545C000F8FA73 /* RegisterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTableViewCell.swift; sourceTree = "<group>"; };
+		18EE71A9250545D400F8FA73 /* NSObject+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Ext.swift"; sourceTree = "<group>"; };
+		18EE71AB2505465B00F8FA73 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		18EE71AF250551D300F8FA73 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		18EE71B12505553500F8FA73 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		18F18289250528F500264EFC /* Farawlah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Farawlah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F1828C250528F500264EFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18F1828E250528F500264EFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +97,8 @@
 		18EE719C25052A8500F8FA73 /* Exts */ = {
 			isa = PBXGroup;
 			children = (
+				18EE71A9250545D400F8FA73 /* NSObject+Ext.swift */,
+				18EE71B12505553500F8FA73 /* UIViewController+Ext.swift */,
 			);
 			path = Exts;
 			sourceTree = "<group>";
@@ -94,6 +110,24 @@
 				18EE71A02505339B00F8FA73 /* UIButtonCustom.swift */,
 			);
 			path = UIViewHelpers;
+			sourceTree = "<group>";
+		};
+		18EE71A22505457A00F8FA73 /* CellClass */ = {
+			isa = PBXGroup;
+			children = (
+				18EE71A32505459900F8FA73 /* ItemTableViewCell.swift */,
+				18EE71A5250545B300F8FA73 /* LoginTableViewCell.swift */,
+				18EE71A7250545C000F8FA73 /* RegisterTableViewCell.swift */,
+			);
+			path = CellClass;
+			sourceTree = "<group>";
+		};
+		18EE71AE250551AC00F8FA73 /* PopUpViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18EE71AF250551D300F8FA73 /* PopUpViewController.swift */,
+			);
+			path = PopUpViewController;
 			sourceTree = "<group>";
 		};
 		18F18280250528F500264EFC = {
@@ -169,7 +203,9 @@
 		18F182BE2505299C00264EFC /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				18EE71AE250551AC00F8FA73 /* PopUpViewController */,
 				18F182C0250529D600264EFC /* MainViewController */,
+				18EE71AB2505465B00F8FA73 /* ListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -177,6 +213,7 @@
 		18F182C0250529D600264EFC /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
+				18EE71A22505457A00F8FA73 /* CellClass */,
 				18EE719A25052A6E00F8FA73 /* MainViewController.swift */,
 			);
 			path = MainViewController;
@@ -313,11 +350,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18EE71AC2505465B00F8FA73 /* ListViewModel.swift in Sources */,
 				18EE719B25052A6E00F8FA73 /* MainViewController.swift in Sources */,
+				18EE71B22505553500F8FA73 /* UIViewController+Ext.swift in Sources */,
 				18EE719F2505339200F8FA73 /* UIViewCustom.swift in Sources */,
+				18EE71B0250551D300F8FA73 /* PopUpViewController.swift in Sources */,
+				18EE71A6250545B300F8FA73 /* LoginTableViewCell.swift in Sources */,
 				18F1828D250528F500264EFC /* AppDelegate.swift in Sources */,
 				18EE71A12505339B00F8FA73 /* UIButtonCustom.swift in Sources */,
+				18EE71A42505459900F8FA73 /* ItemTableViewCell.swift in Sources */,
+				18EE71A8250545C000F8FA73 /* RegisterTableViewCell.swift in Sources */,
 				18F1828F250528F500264EFC /* SceneDelegate.swift in Sources */,
+				18EE71AA250545D400F8FA73 /* NSObject+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

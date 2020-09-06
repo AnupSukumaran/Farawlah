@@ -9,22 +9,53 @@
 import UIKit
 
 class MainViewController: UIViewController {
+    
+    @IBOutlet weak var listView: UITableView!
+    @IBOutlet weak var addItemsBtn: UIBarButtonItem!
+    
+    var listViewModel: ListViewModel! {
+        didSet {
+            handlersForViewModel()
+        }
+    }
+}
 
+extension MainViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpViewModels()
+    }
 
-        // Do any additional setup after loading the view.
+}
+
+extension MainViewController {
+    
+    func setUpViewModels() {
+        configListViewModel()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func configListViewModel() {
+        guard let li = listViewModel else { return }
+        listView.delegate = li
+        listView.dataSource = li
+        listView.rowHeight = UITableView.automaticDimension
+        listView.estimatedRowHeight = 53
     }
-    */
+    
+    func handlersForViewModel(){
+        listViewModel.popUpControllerHandler = { [weak self] alertVC in
+            self?.present(alertVC, animated: true, completion: nil)
+        }
+    }
+    
+}
 
+extension MainViewController {
+    
+    @IBAction func addItemBtnAction(_ sender: UIBarButtonItem) {
+        //listViewModel?.popUpController()
+        moveToTextViewPopUpViewController()
+    }
+    
 }
