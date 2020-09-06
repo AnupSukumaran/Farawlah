@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18EE719B25052A6E00F8FA73 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE719A25052A6E00F8FA73 /* MainViewController.swift */; };
+		18EE719F2505339200F8FA73 /* UIViewCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE719E2505339200F8FA73 /* UIViewCustom.swift */; };
+		18EE71A12505339B00F8FA73 /* UIButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE71A02505339B00F8FA73 /* UIButtonCustom.swift */; };
 		18F1828D250528F500264EFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1828C250528F500264EFC /* AppDelegate.swift */; };
 		18F1828F250528F500264EFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1828E250528F500264EFC /* SceneDelegate.swift */; };
-		18F18291250528F500264EFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F18290250528F500264EFC /* ViewController.swift */; };
 		18F18294250528F500264EFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F18292250528F500264EFC /* Main.storyboard */; };
 		18F18296250528FB00264EFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F18295250528FB00264EFC /* Assets.xcassets */; };
 		18F18299250528FB00264EFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F18297250528FB00264EFC /* LaunchScreen.storyboard */; };
@@ -35,10 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18EE719A25052A6E00F8FA73 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		18EE719E2505339200F8FA73 /* UIViewCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewCustom.swift; sourceTree = "<group>"; };
+		18EE71A02505339B00F8FA73 /* UIButtonCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonCustom.swift; sourceTree = "<group>"; };
 		18F18289250528F500264EFC /* Farawlah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Farawlah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F1828C250528F500264EFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18F1828E250528F500264EFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		18F18290250528F500264EFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18F18293250528F500264EFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18F18295250528FB00264EFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18F18298250528FB00264EFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +80,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18EE719C25052A8500F8FA73 /* Exts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Exts;
+			sourceTree = "<group>";
+		};
+		18EE719D25052D9400F8FA73 /* UIViewHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				18EE719E2505339200F8FA73 /* UIViewCustom.swift */,
+				18EE71A02505339B00F8FA73 /* UIButtonCustom.swift */,
+			);
+			path = UIViewHelpers;
+			sourceTree = "<group>";
+		};
 		18F18280250528F500264EFC = {
 			isa = PBXGroup;
 			children = (
@@ -99,12 +119,14 @@
 		18F1828B250528F500264EFC /* Farawlah */ = {
 			isa = PBXGroup;
 			children = (
+				18EE719D25052D9400F8FA73 /* UIViewHelpers */,
+				18EE719C25052A8500F8FA73 /* Exts */,
 				18F1828C250528F500264EFC /* AppDelegate.swift */,
 				18F1828E250528F500264EFC /* SceneDelegate.swift */,
-				18F18290250528F500264EFC /* ViewController.swift */,
-				18F18292250528F500264EFC /* Main.storyboard */,
+				18F182BC2505298800264EFC /* Model */,
+				18F182BD2505299200264EFC /* View */,
+				18F182BE2505299C00264EFC /* ViewModel */,
 				18F18295250528FB00264EFC /* Assets.xcassets */,
-				18F18297250528FB00264EFC /* LaunchScreen.storyboard */,
 				18F1829A250528FB00264EFC /* Info.plist */,
 			);
 			path = Farawlah;
@@ -126,6 +148,38 @@
 				18F182B0250528FC00264EFC /* Info.plist */,
 			);
 			path = FarawlahUITests;
+			sourceTree = "<group>";
+		};
+		18F182BC2505298800264EFC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18F182BD2505299200264EFC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18F18292250528F500264EFC /* Main.storyboard */,
+				18F18297250528FB00264EFC /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18F182BE2505299C00264EFC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				18F182C0250529D600264EFC /* MainViewController */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		18F182C0250529D600264EFC /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18EE719A25052A6E00F8FA73 /* MainViewController.swift */,
+			);
+			path = MainViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +313,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18F18291250528F500264EFC /* ViewController.swift in Sources */,
+				18EE719B25052A6E00F8FA73 /* MainViewController.swift in Sources */,
+				18EE719F2505339200F8FA73 /* UIViewCustom.swift in Sources */,
 				18F1828D250528F500264EFC /* AppDelegate.swift in Sources */,
+				18EE71A12505339B00F8FA73 /* UIButtonCustom.swift in Sources */,
 				18F1828F250528F500264EFC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
