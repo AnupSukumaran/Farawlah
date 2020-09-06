@@ -24,6 +24,13 @@ extension UIViewController {
         }
     }
     
+    func callMainViewController() {
+        guard let vc = mainStoryboard().instantiateViewController(withIdentifier: MainViewController.identifier) as? MainViewController else {fatalError("MainViewController not found")}
+        vc.loginViewModel = LoginViewModel()
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: false, completion: nil)
+    }
+    
     func showAnimate() {
         view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
         view.alpha = 0.0

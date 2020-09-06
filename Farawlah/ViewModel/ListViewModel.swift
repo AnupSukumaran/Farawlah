@@ -13,11 +13,19 @@ class ListViewModel: NSObject {
     var popUpControllerHandler: ((_ alertController: UIAlertController) -> ())?
     var tableViewReloadHandler: (() -> ())?
     var itemDuplicationAlertHandler: (() -> ())?
+    var loginVCHandler: (() -> ())?
     override init() {}
 
 }
 
 extension ListViewModel {
+    
+    func checkUserInSession() {
+        guard UserDefaults.standard.bool(forKey: .kSession) else {
+            self.loginVCHandler?()
+            return
+        }
+    }
     
     func popUpController() {
 

@@ -3,12 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		188CED362505613F0031B076 /* SASCustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CED352505613F0031B076 /* SASCustomAlertView.swift */; };
 		188CED38250561790031B076 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CED37250561790031B076 /* Constants.swift */; };
+		188CED3A250563CD0031B076 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CED39250563CD0031B076 /* LoginViewModel.swift */; };
+		188CED3D250564340031B076 /* SASKeyboardPack in Frameworks */ = {isa = PBXBuildFile; productRef = 188CED3C250564340031B076 /* SASKeyboardPack */; };
+		188CED40250565670031B076 /* LoginTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CED3F250565670031B076 /* LoginTableViewCellModel.swift */; };
 		18EE719B25052A6E00F8FA73 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE719A25052A6E00F8FA73 /* MainViewController.swift */; };
 		18EE719F2505339200F8FA73 /* UIViewCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE719E2505339200F8FA73 /* UIViewCustom.swift */; };
 		18EE71A12505339B00F8FA73 /* UIButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE71A02505339B00F8FA73 /* UIButtonCustom.swift */; };
@@ -48,6 +51,8 @@
 /* Begin PBXFileReference section */
 		188CED352505613F0031B076 /* SASCustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SASCustomAlertView.swift; sourceTree = "<group>"; };
 		188CED37250561790031B076 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		188CED39250563CD0031B076 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		188CED3F250565670031B076 /* LoginTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewCellModel.swift; sourceTree = "<group>"; };
 		18EE719A25052A6E00F8FA73 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		18EE719E2505339200F8FA73 /* UIViewCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewCustom.swift; sourceTree = "<group>"; };
 		18EE71A02505339B00F8FA73 /* UIButtonCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonCustom.swift; sourceTree = "<group>"; };
@@ -78,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188CED3D250564340031B076 /* SASKeyboardPack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +104,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		188CED3E2505653D0031B076 /* CellModel */ = {
+			isa = PBXGroup;
+			children = (
+				188CED3F250565670031B076 /* LoginTableViewCellModel.swift */,
+			);
+			path = CellModel;
+			sourceTree = "<group>";
+		};
 		18EE719C25052A8500F8FA73 /* Exts */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +135,7 @@
 		18EE71A22505457A00F8FA73 /* CellClass */ = {
 			isa = PBXGroup;
 			children = (
+				188CED3E2505653D0031B076 /* CellModel */,
 				18EE71A32505459900F8FA73 /* ItemTableViewCell.swift */,
 				18EE71A5250545B300F8FA73 /* LoginTableViewCell.swift */,
 				18EE71A7250545C000F8FA73 /* RegisterTableViewCell.swift */,
@@ -209,9 +224,11 @@
 		18F182BE2505299C00264EFC /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				18EE71A22505457A00F8FA73 /* CellClass */,
 				18EE71AE250551AC00F8FA73 /* PopUpViewController */,
 				18F182C0250529D600264EFC /* MainViewController */,
 				18EE71AB2505465B00F8FA73 /* ListViewModel.swift */,
+				188CED39250563CD0031B076 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -219,7 +236,6 @@
 		18F182C0250529D600264EFC /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
-				18EE71A22505457A00F8FA73 /* CellClass */,
 				18EE719A25052A6E00F8FA73 /* MainViewController.swift */,
 			);
 			path = MainViewController;
@@ -241,6 +257,9 @@
 			dependencies = (
 			);
 			name = Farawlah;
+			packageProductDependencies = (
+				188CED3C250564340031B076 /* SASKeyboardPack */,
+			);
 			productName = Farawlah;
 			productReference = 18F18289250528F500264EFC /* Farawlah.app */;
 			productType = "com.apple.product-type.application";
@@ -313,6 +332,9 @@
 				Base,
 			);
 			mainGroup = 18F18280250528F500264EFC;
+			packageReferences = (
+				188CED3B250564340031B076 /* XCRemoteSwiftPackageReference "SASKeyboardPack" */,
+			);
 			productRefGroup = 18F1828A250528F500264EFC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -361,9 +383,11 @@
 				18EE71B22505553500F8FA73 /* UIViewController+Ext.swift in Sources */,
 				18EE719F2505339200F8FA73 /* UIViewCustom.swift in Sources */,
 				18EE71B0250551D300F8FA73 /* PopUpViewController.swift in Sources */,
+				188CED40250565670031B076 /* LoginTableViewCellModel.swift in Sources */,
 				18EE71A6250545B300F8FA73 /* LoginTableViewCell.swift in Sources */,
 				188CED362505613F0031B076 /* SASCustomAlertView.swift in Sources */,
 				18F1828D250528F500264EFC /* AppDelegate.swift in Sources */,
+				188CED3A250563CD0031B076 /* LoginViewModel.swift in Sources */,
 				18EE71A12505339B00F8FA73 /* UIButtonCustom.swift in Sources */,
 				18EE71A42505459900F8FA73 /* ItemTableViewCell.swift in Sources */,
 				18EE71A8250545C000F8FA73 /* RegisterTableViewCell.swift in Sources */,
@@ -700,6 +724,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		188CED3B250564340031B076 /* XCRemoteSwiftPackageReference "SASKeyboardPack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AnupSukumaran/SASKeyboardPack.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		188CED3C250564340031B076 /* SASKeyboardPack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 188CED3B250564340031B076 /* XCRemoteSwiftPackageReference "SASKeyboardPack" */;
+			productName = SASKeyboardPack;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 18F18281250528F500264EFC /* Project object */;
 }

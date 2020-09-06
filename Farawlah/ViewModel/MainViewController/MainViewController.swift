@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SASKeyboardPack
 
 class MainViewController: UIViewController {
     
@@ -18,6 +19,19 @@ class MainViewController: UIViewController {
             handlersForViewModel()
         }
     }
+    
+    var loginViewModel: LoginViewModel! {
+        didSet {
+            
+        }
+    }
+    @IBOutlet var tapGest: UITapGestureRecognizer!
+    
+    
+    @IBAction func tapAction(_ sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+    }
+    
 }
 
 extension MainViewController {
@@ -26,6 +40,11 @@ extension MainViewController {
         super.viewDidLoad()
         setUpViewModels()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        listViewModel?.checkUserInSession()
+    }
 
 }
 
@@ -33,6 +52,7 @@ extension MainViewController {
     
     func setUpViewModels() {
         configListViewModel()
+        configLoginViewModel()
     }
     
     func configListViewModel() {
@@ -42,6 +62,16 @@ extension MainViewController {
         listView.rowHeight = UITableView.automaticDimension
         listView.estimatedRowHeight = 53
     }
+    
+    func configLoginViewModel() {
+        guard let li = loginViewModel else { return }
+        listView.delegate = li
+        listView.dataSource = li
+        li.viewHeight = listView.frame.height
+        KeyBrd().scrollAdjustment(listView, top: -64)
+        KeyBrd().regKBNotific(listView, 120)
+    }
+    
     
     func handlersForViewModel(){
         listViewModel.popUpControllerHandler = { [weak self] alertVC in
@@ -56,6 +86,10 @@ extension MainViewController {
             guard let vc = self else {return}
             UIAlertController.showAlert(title: .appName, message: .message, buttonTitle: .ok, selfClass: vc)
         }
+        
+        listViewModel.loginVCHandler = { [weak self] in
+            self?.callMainViewController()
+        }
     }
     
 }
@@ -66,5 +100,7 @@ extension MainViewController {
         listViewModel?.popUpController()
         //moveToTextViewPopUpViewController()
     }
+    
+    
     
 }

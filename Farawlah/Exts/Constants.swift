@@ -12,4 +12,5 @@ extension String {
     static var appName = "Farawlah"
     static var message = "Already in the list."
     static var ok = "OK"
+    static var kSession = "userInSession"
 }
