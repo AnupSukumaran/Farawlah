@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Loading Child View Controller-->
+        <scene sceneID="hrT-06-NUR">
+            <objects>
+                <viewController storyboardIdentifier="LoadingChildViewController" id="CTi-Ob-u7a" customClass="LoadingChildViewController" customModule="SASLoaderPod" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KWx-5j-Pny">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="nnj-jY-sZ0">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lxt-dW-KjQ">
+                                <rect key="frame" x="160.5" y="403.5" width="93" height="89"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="6zC-xc-Lir"/>
+                                    <constraint firstAttribute="width" constant="93" id="pL6-PT-R9c"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.26011344180000001" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lxt-dW-KjQ" firstAttribute="centerX" secondItem="KWx-5j-Pny" secondAttribute="centerX" id="CeL-P5-Kcp"/>
+                            <constraint firstItem="nnj-jY-sZ0" firstAttribute="centerX" secondItem="KWx-5j-Pny" secondAttribute="centerX" id="NBa-ya-ESN"/>
+                            <constraint firstItem="lxt-dW-KjQ" firstAttribute="centerY" secondItem="KWx-5j-Pny" secondAttribute="centerY" id="RhS-ou-4rr"/>
+                            <constraint firstItem="nnj-jY-sZ0" firstAttribute="centerY" secondItem="KWx-5j-Pny" secondAttribute="centerY" id="bRN-Xc-2f8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="I5g-tl-jrv"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndic" destination="nnj-jY-sZ0" id="Xzj-fF-tfl"/>
+                        <outlet property="indicatorBaseView" destination="lxt-dW-KjQ" id="bkH-he-rkN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ypw-J1-8QU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1786.9565217391305" y="100.44642857142857"/>
+        </scene>
+    </scenes>
+</document>

@@ -8,8 +8,13 @@
 
 import Foundation
 import UIKit
+import SASLoaderPod
 
 extension UIViewController {
+    
+    static let loader: (UIViewController) -> (LoaderView) = { (vc) in
+        return LoaderView(callOn: vc, type: .lineScale, color: .red, padding: 18)
+    }
     
     func mainStoryboard() -> UIStoryboard {
         return UIStoryboard(name: "Main", bundle: Bundle.main)
@@ -26,7 +31,7 @@ extension UIViewController {
     
     func callMainViewController() {
         guard let vc = mainStoryboard().instantiateViewController(withIdentifier: MainViewController.identifier) as? MainViewController else {fatalError("MainViewController not found")}
-        vc.loginViewModel = LoginViewModel()
+        vc.loginViewModel = LoginViewModel(loader: UIViewController.loader(vc))
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: false, completion: nil)
     }

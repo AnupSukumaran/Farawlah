@@ -1,0 +1,6 @@
+framework module SASLoaderPod {
+  umbrella header "SASLoaderPod-umbrella.h"
+
+  export *
+  module * { export * }
+}

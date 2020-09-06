@@ -12,6 +12,8 @@
 		188CED3A250563CD0031B076 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CED39250563CD0031B076 /* LoginViewModel.swift */; };
 		188CED3D250564340031B076 /* SASKeyboardPack in Frameworks */ = {isa = PBXBuildFile; productRef = 188CED3C250564340031B076 /* SASKeyboardPack */; };
 		188CED40250565670031B076 /* LoginTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CED3F250565670031B076 /* LoginTableViewCellModel.swift */; };
+		188CED4225057A450031B076 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CED4125057A450031B076 /* UserModel.swift */; };
+		188CED4525057F040031B076 /* SASValidatorPack in Frameworks */ = {isa = PBXBuildFile; productRef = 188CED4425057F040031B076 /* SASValidatorPack */; };
 		18EE719B25052A6E00F8FA73 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE719A25052A6E00F8FA73 /* MainViewController.swift */; };
 		18EE719F2505339200F8FA73 /* UIViewCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE719E2505339200F8FA73 /* UIViewCustom.swift */; };
 		18EE71A12505339B00F8FA73 /* UIButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE71A02505339B00F8FA73 /* UIButtonCustom.swift */; };
@@ -29,6 +31,9 @@
 		18F18299250528FB00264EFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F18297250528FB00264EFC /* LaunchScreen.storyboard */; };
 		18F182A4250528FC00264EFC /* FarawlahTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F182A3250528FC00264EFC /* FarawlahTests.swift */; };
 		18F182AF250528FC00264EFC /* FarawlahUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F182AE250528FC00264EFC /* FarawlahUITests.swift */; };
+		26ADF2A35EB4730F668A617D /* Pods_Farawlah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8698B59436C138DC934A99 /* Pods_Farawlah.framework */; };
+		6AFC2C80AB7F7B1187925B45 /* Pods_FarawlahTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BFE5B266DBE1631E9F3F3BE /* Pods_FarawlahTests.framework */; };
+		D0BBD61E37449EBCACC525FA /* Pods_Farawlah_FarawlahUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE57CB3301752D706694092E /* Pods_Farawlah_FarawlahUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,7 @@
 		188CED37250561790031B076 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		188CED39250563CD0031B076 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		188CED3F250565670031B076 /* LoginTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewCellModel.swift; sourceTree = "<group>"; };
+		188CED4125057A450031B076 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		18EE719A25052A6E00F8FA73 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		18EE719E2505339200F8FA73 /* UIViewCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewCustom.swift; sourceTree = "<group>"; };
 		18EE71A02505339B00F8FA73 /* UIButtonCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonCustom.swift; sourceTree = "<group>"; };
@@ -76,6 +82,15 @@
 		18F182AA250528FC00264EFC /* FarawlahUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FarawlahUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F182AE250528FC00264EFC /* FarawlahUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarawlahUITests.swift; sourceTree = "<group>"; };
 		18F182B0250528FC00264EFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E8698B59436C138DC934A99 /* Pods_Farawlah.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Farawlah.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F4DBE8295B3037B6061FF23 /* Pods-Farawlah-FarawlahUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farawlah-FarawlahUITests.debug.xcconfig"; path = "Target Support Files/Pods-Farawlah-FarawlahUITests/Pods-Farawlah-FarawlahUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5BFE5B266DBE1631E9F3F3BE /* Pods_FarawlahTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FarawlahTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		674B5AF5B2F7F5B182B4BEA6 /* Pods-Farawlah.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farawlah.release.xcconfig"; path = "Target Support Files/Pods-Farawlah/Pods-Farawlah.release.xcconfig"; sourceTree = "<group>"; };
+		6C7F2D90EA7E33C5C57710A3 /* Pods-Farawlah.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farawlah.debug.xcconfig"; path = "Target Support Files/Pods-Farawlah/Pods-Farawlah.debug.xcconfig"; sourceTree = "<group>"; };
+		7E375204D3EA1B8ECA4D12BA /* Pods-FarawlahTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FarawlahTests.debug.xcconfig"; path = "Target Support Files/Pods-FarawlahTests/Pods-FarawlahTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D3E611F7C800665B9FB10739 /* Pods-Farawlah-FarawlahUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farawlah-FarawlahUITests.release.xcconfig"; path = "Target Support Files/Pods-Farawlah-FarawlahUITests/Pods-Farawlah-FarawlahUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D7404B8A9B5BB36617FF1FFB /* Pods-FarawlahTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FarawlahTests.release.xcconfig"; path = "Target Support Files/Pods-FarawlahTests/Pods-FarawlahTests.release.xcconfig"; sourceTree = "<group>"; };
+		FE57CB3301752D706694092E /* Pods_Farawlah_FarawlahUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Farawlah_FarawlahUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +98,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188CED4525057F040031B076 /* SASValidatorPack in Frameworks */,
 				188CED3D250564340031B076 /* SASKeyboardPack in Frameworks */,
+				26ADF2A35EB4730F668A617D /* Pods_Farawlah.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AFC2C80AB7F7B1187925B45 /* Pods_FarawlahTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0BBD61E37449EBCACC525FA /* Pods_Farawlah_FarawlahUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +177,8 @@
 				18F182A2250528FC00264EFC /* FarawlahTests */,
 				18F182AD250528FC00264EFC /* FarawlahUITests */,
 				18F1828A250528F500264EFC /* Products */,
+				1C546900DB17E869246F88D7 /* Pods */,
+				E055F5E47230A0480291068D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -208,6 +229,7 @@
 		18F182BC2505298800264EFC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				188CED4125057A450031B076 /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -241,6 +263,29 @@
 			path = MainViewController;
 			sourceTree = "<group>";
 		};
+		1C546900DB17E869246F88D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C7F2D90EA7E33C5C57710A3 /* Pods-Farawlah.debug.xcconfig */,
+				674B5AF5B2F7F5B182B4BEA6 /* Pods-Farawlah.release.xcconfig */,
+				1F4DBE8295B3037B6061FF23 /* Pods-Farawlah-FarawlahUITests.debug.xcconfig */,
+				D3E611F7C800665B9FB10739 /* Pods-Farawlah-FarawlahUITests.release.xcconfig */,
+				7E375204D3EA1B8ECA4D12BA /* Pods-FarawlahTests.debug.xcconfig */,
+				D7404B8A9B5BB36617FF1FFB /* Pods-FarawlahTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E055F5E47230A0480291068D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E8698B59436C138DC934A99 /* Pods_Farawlah.framework */,
+				FE57CB3301752D706694092E /* Pods_Farawlah_FarawlahUITests.framework */,
+				5BFE5B266DBE1631E9F3F3BE /* Pods_FarawlahTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -248,9 +293,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18F182B3250528FC00264EFC /* Build configuration list for PBXNativeTarget "Farawlah" */;
 			buildPhases = (
+				575F15CE1E2B89E3CB8F7BC6 /* [CP] Check Pods Manifest.lock */,
 				18F18285250528F500264EFC /* Sources */,
 				18F18286250528F500264EFC /* Frameworks */,
 				18F18287250528F500264EFC /* Resources */,
+				51E024D352F8B2D8754E2CEB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +306,7 @@
 			name = Farawlah;
 			packageProductDependencies = (
 				188CED3C250564340031B076 /* SASKeyboardPack */,
+				188CED4425057F040031B076 /* SASValidatorPack */,
 			);
 			productName = Farawlah;
 			productReference = 18F18289250528F500264EFC /* Farawlah.app */;
@@ -268,6 +316,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18F182B6250528FC00264EFC /* Build configuration list for PBXNativeTarget "FarawlahTests" */;
 			buildPhases = (
+				617EDEE63837A19549B2A68B /* [CP] Check Pods Manifest.lock */,
 				18F1829B250528FC00264EFC /* Sources */,
 				18F1829C250528FC00264EFC /* Frameworks */,
 				18F1829D250528FC00264EFC /* Resources */,
@@ -286,9 +335,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18F182B9250528FC00264EFC /* Build configuration list for PBXNativeTarget "FarawlahUITests" */;
 			buildPhases = (
+				B896243B6947A363A8119D41 /* [CP] Check Pods Manifest.lock */,
 				18F182A6250528FC00264EFC /* Sources */,
 				18F182A7250528FC00264EFC /* Frameworks */,
 				18F182A8250528FC00264EFC /* Resources */,
+				141CA4BFB720E41CEEA12DEA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -334,6 +385,7 @@
 			mainGroup = 18F18280250528F500264EFC;
 			packageReferences = (
 				188CED3B250564340031B076 /* XCRemoteSwiftPackageReference "SASKeyboardPack" */,
+				188CED4325057F040031B076 /* XCRemoteSwiftPackageReference "SASValidatorPack" */,
 			);
 			productRefGroup = 18F1828A250528F500264EFC /* Products */;
 			projectDirPath = "";
@@ -373,6 +425,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		141CA4BFB720E41CEEA12DEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Farawlah-FarawlahUITests/Pods-Farawlah-FarawlahUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Farawlah-FarawlahUITests/Pods-Farawlah-FarawlahUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Farawlah-FarawlahUITests/Pods-Farawlah-FarawlahUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51E024D352F8B2D8754E2CEB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Farawlah/Pods-Farawlah-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Farawlah/Pods-Farawlah-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Farawlah/Pods-Farawlah-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		575F15CE1E2B89E3CB8F7BC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Farawlah-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		617EDEE63837A19549B2A68B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FarawlahTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B896243B6947A363A8119D41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Farawlah-FarawlahUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18F18285250528F500264EFC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -386,6 +541,7 @@
 				188CED40250565670031B076 /* LoginTableViewCellModel.swift in Sources */,
 				18EE71A6250545B300F8FA73 /* LoginTableViewCell.swift in Sources */,
 				188CED362505613F0031B076 /* SASCustomAlertView.swift in Sources */,
+				188CED4225057A450031B076 /* UserModel.swift in Sources */,
 				18F1828D250528F500264EFC /* AppDelegate.swift in Sources */,
 				188CED3A250563CD0031B076 /* LoginViewModel.swift in Sources */,
 				18EE71A12505339B00F8FA73 /* UIButtonCustom.swift in Sources */,
@@ -564,6 +720,7 @@
 		};
 		18F182B4250528FC00264EFC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C7F2D90EA7E33C5C57710A3 /* Pods-Farawlah.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -583,6 +740,7 @@
 		};
 		18F182B5250528FC00264EFC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 674B5AF5B2F7F5B182B4BEA6 /* Pods-Farawlah.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -602,6 +760,7 @@
 		};
 		18F182B7250528FC00264EFC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E375204D3EA1B8ECA4D12BA /* Pods-FarawlahTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -624,6 +783,7 @@
 		};
 		18F182B8250528FC00264EFC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7404B8A9B5BB36617FF1FFB /* Pods-FarawlahTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -646,6 +806,7 @@
 		};
 		18F182BA250528FC00264EFC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F4DBE8295B3037B6061FF23 /* Pods-Farawlah-FarawlahUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -666,6 +827,7 @@
 		};
 		18F182BB250528FC00264EFC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3E611F7C800665B9FB10739 /* Pods-Farawlah-FarawlahUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -734,6 +896,14 @@
 				minimumVersion = 1.0.3;
 			};
 		};
+		188CED4325057F040031B076 /* XCRemoteSwiftPackageReference "SASValidatorPack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AnupSukumaran/SASValidatorPack.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.7;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -741,6 +911,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 188CED3B250564340031B076 /* XCRemoteSwiftPackageReference "SASKeyboardPack" */;
 			productName = SASKeyboardPack;
+		};
+		188CED4425057F040031B076 /* SASValidatorPack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 188CED4325057F040031B076 /* XCRemoteSwiftPackageReference "SASValidatorPack" */;
+			productName = SASValidatorPack;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

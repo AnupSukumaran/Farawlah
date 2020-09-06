@@ -465,6 +465,11 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Farawlah" id="cOJ-2v-IkO">
+                        <barButtonItem key="leftBarButtonItem" title="Log Out" id="S1V-hC-Ztb">
+                            <connections>
+                                <action selector="logOut:" destination="BYZ-38-t0r" id="M9v-TC-Zjg"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="X2w-vg-LqS">
                             <connections>
                                 <action selector="addItemBtnAction:" destination="BYZ-38-t0r" id="Ue5-jy-QEq"/>

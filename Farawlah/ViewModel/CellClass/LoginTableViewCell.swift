@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SASValidatorPack
 
 class LoginTableViewCell: UITableViewCell {
     
@@ -21,21 +22,18 @@ class LoginTableViewCell: UITableViewCell {
     @IBOutlet weak var googleBtn: UIButton!
     
     var textFields = [UITextField]()
-    
+    var sasValidator: SASValidator?
     var newUserSignUpBtnActionHandler:(() -> ())?
-    var loginBtnActionHandler: (() -> ())?
+    //var loginBtnActionHandler: (() -> ())?
     var forgotBtnActionHandler: (() ->())?
     var facebookActionHandler: (() -> ())?
     var googleActionHandler: (() -> ())?
+    var validation: ((_ success: Bool) -> ())?
     
     var viewModel: LoginViewModel! {
         didSet {
             textFields.forEach{$0.delegate = viewModel}
-            viewModel.newUserSignUpBtnActionHandler = newUserSignUpBtnActionHandler
-            viewModel.loginBtnActionHandler = loginBtnActionHandler
-            viewModel.forgotBtnActionHandler = forgotBtnActionHandler
-            viewModel.facebookActionHandler = facebookActionHandler
-            viewModel.googleActionHandler = googleActionHandler
+            
         }
         
     }
@@ -43,6 +41,7 @@ class LoginTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         textFields = [emailTxtField, passwordTxtField]
+        sasValidator = SASValidator(delegate: self, textfields: textFields)
     }
   
     @IBAction func newUserSignUpBtnAction(_ sender: UIButton) {
@@ -50,7 +49,8 @@ class LoginTableViewCell: UITableViewCell {
     }
     
     @IBAction func loginBtnAction(_ sender: UIButton) {
-        loginBtnActionHandler?()
+        textFields.forEach{$0.resignFirstResponder()}
+        sasValidator?.setValidator()
     }
     
     @IBAction func forgotBtnAction(_ sender: UIButton) {
@@ -63,6 +63,27 @@ class LoginTableViewCell: UITableViewCell {
     
     @IBAction func googleBtnAction(_ sender: UIButton) {
         googleActionHandler?()
+    }
+    
+    
+}
+
+extension LoginTableViewCell: SASValidatorDelegate {
+    func setValidatorAndRulesForTextFields(_ validator: Validator) {
+        
+        validator.registerField(emailTxtField, rules: [RequiredRule(message: "Please enter your email address"), EmailRule(message: "Email address not valid")])
+
+        validator.registerField(passwordTxtField, rules: [RequiredRule(message: "Please enter your password"), PasswordRule(message: "Password must have 8 characters with first letter caps")])
+        
+    }
+    
+    func validationSuccessful() {
+        validation?(true)
+    }
+    
+    func validationFailed(_ errors: [(Validatable, ValidationError)]) {
+       // print("errors = \(errors.map{$0.1.errorMessage})")
+        validation?(false)
     }
     
     

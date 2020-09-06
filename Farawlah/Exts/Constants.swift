@@ -12,7 +12,14 @@ extension String {
     static var appName = "Farawlah"
     static var message = "Already in the list."
     static var ok = "OK"
+    static var credentialMsg = "Email Address or password not valid"
     static var kSession = "userInSession"
+    
+    
     static var staticUserEmailAddress = "admin@g.com"
-    static var staticPassword = "Admin"
+    static var staticPassword = "Admin9119"
+}
+
+extension Int {
+    static var staticUserID = 5567434
 }

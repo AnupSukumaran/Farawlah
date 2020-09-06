@@ -1,0 +1,6 @@
+framework module Pods_Farawlah_FarawlahUITests {
+  umbrella header "Pods-Farawlah-FarawlahUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

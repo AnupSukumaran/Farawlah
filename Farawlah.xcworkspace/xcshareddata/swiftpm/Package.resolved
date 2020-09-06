@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SASKeyboardPack",
+        "repositoryURL": "https://github.com/AnupSukumaran/SASKeyboardPack.git",
+        "state": {
+          "branch": null,
+          "revision": "a976437e243c688924ece63bb0b824b2da083495",
+          "version": "1.0.3"
+        }
+      },
+      {
+        "package": "SASLogger",
+        "repositoryURL": "https://github.com/AnupSukumaran/SASLogger.git",
+        "state": {
+          "branch": null,
+          "revision": "fe9bcfc41b891e90aabf186906e01b977bed1bba",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "package": "SASValidatorPack",
+        "repositoryURL": "https://github.com/AnupSukumaran/SASValidatorPack.git",
+        "state": {
+          "branch": null,
+          "revision": "dffbc34878a8e7442c24bb11ff311fec78afb437",
+          "version": "1.0.7"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

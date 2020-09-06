@@ -14,6 +14,7 @@ class ListViewModel: NSObject {
     var tableViewReloadHandler: (() -> ())?
     var itemDuplicationAlertHandler: (() -> ())?
     var loginVCHandler: (() -> ())?
+    
     override init() {}
 
 }
@@ -21,10 +22,16 @@ class ListViewModel: NSObject {
 extension ListViewModel {
     
     func checkUserInSession() {
-        guard UserDefaults.standard.bool(forKey: .kSession) else {
+        guard let userID = UserDefaults.standard.value(forKey: .kSession) as? Int, userID == .staticUserID else {
             self.loginVCHandler?()
             return
         }
+    
+    }
+    
+    func clearSession() {
+        UserDefaults.standard.removeObject(forKey: .kSession)
+         self.loginVCHandler?()
     }
     
     func popUpController() {
