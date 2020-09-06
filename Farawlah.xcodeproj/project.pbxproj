@@ -119,10 +119,10 @@
 		18F1828B250528F500264EFC /* Farawlah */ = {
 			isa = PBXGroup;
 			children = (
-				18EE719D25052D9400F8FA73 /* UIViewHelpers */,
-				18EE719C25052A8500F8FA73 /* Exts */,
 				18F1828C250528F500264EFC /* AppDelegate.swift */,
 				18F1828E250528F500264EFC /* SceneDelegate.swift */,
+				18EE719D25052D9400F8FA73 /* UIViewHelpers */,
+				18EE719C25052A8500F8FA73 /* Exts */,
 				18F182BC2505298800264EFC /* Model */,
 				18F182BD2505299200264EFC /* View */,
 				18F182BE2505299C00264EFC /* ViewModel */,
@@ -493,6 +493,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RDRMVW96A6;
 				INFOPLIST_FILE = Farawlah/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -511,6 +512,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RDRMVW96A6;
 				INFOPLIST_FILE = Farawlah/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
