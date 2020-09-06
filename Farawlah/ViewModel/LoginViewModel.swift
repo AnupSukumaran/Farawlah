@@ -11,6 +11,12 @@ import UIKit
 
 class LoginViewModel: NSObject {
     var viewHeight: CGFloat = 0
+    var newUserSignUpBtnActionHandler:(() -> ())?
+    var loginBtnActionHandler: (() -> ())?
+    var forgotBtnActionHandler: (() ->())?
+    var facebookActionHandler: (() -> ())?
+    var googleActionHandler: (() -> ())?
+    
     override init() {}
 }
 
@@ -26,11 +32,18 @@ extension LoginViewModel: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: LoginTableViewCell.identifier, for: indexPath) as? LoginTableViewCell {
-            
+            cell.viewModel = self
             return cell
         }
         return UITableViewCell()
     }
     
     
+}
+
+extension LoginViewModel: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }

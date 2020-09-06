@@ -94,7 +94,7 @@
                                                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email id or User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hFv-je-QIA">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="266" height="55"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                    <textInputTraits key="textInputTraits"/>
+                                                                                    <textInputTraits key="textInputTraits" textContentType="email"/>
                                                                                 </textField>
                                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u8Q-1J-dwO" customClass="UIViewCustom" customModule="Farawlah" customModuleProvider="target">
                                                                                     <rect key="frame" x="282" y="7.5" width="40" height="40"/>
@@ -174,7 +174,7 @@
                                                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RW6-GE-aUC">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="266" height="55"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                    <textInputTraits key="textInputTraits"/>
+                                                                                    <textInputTraits key="textInputTraits" textContentType="password"/>
                                                                                 </textField>
                                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eVl-2E-WbB" customClass="UIViewCustom" customModule="Farawlah" customModuleProvider="target">
                                                                                     <rect key="frame" x="282" y="7.5" width="40" height="40"/>

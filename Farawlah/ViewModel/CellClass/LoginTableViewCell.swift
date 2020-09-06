@@ -20,21 +20,49 @@ class LoginTableViewCell: UITableViewCell {
     @IBOutlet weak var facebookBtn: UIButton!
     @IBOutlet weak var googleBtn: UIButton!
     
+    var textFields = [UITextField]()
+    
+    var newUserSignUpBtnActionHandler:(() -> ())?
+    var loginBtnActionHandler: (() -> ())?
+    var forgotBtnActionHandler: (() ->())?
+    var facebookActionHandler: (() -> ())?
+    var googleActionHandler: (() -> ())?
+    
+    var viewModel: LoginViewModel! {
+        didSet {
+            textFields.forEach{$0.delegate = viewModel}
+            viewModel.newUserSignUpBtnActionHandler = newUserSignUpBtnActionHandler
+            viewModel.loginBtnActionHandler = loginBtnActionHandler
+            viewModel.forgotBtnActionHandler = forgotBtnActionHandler
+            viewModel.facebookActionHandler = facebookActionHandler
+            viewModel.googleActionHandler = googleActionHandler
+        }
+        
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        textFields = [emailTxtField, passwordTxtField]
+    }
   
     @IBAction func newUserSignUpBtnAction(_ sender: UIButton) {
-        
+        newUserSignUpBtnActionHandler?()
     }
     
     @IBAction func loginBtnAction(_ sender: UIButton) {
-        
+        loginBtnActionHandler?()
     }
     
     @IBAction func forgotBtnAction(_ sender: UIButton) {
+        forgotBtnActionHandler?()
     }
     
     @IBAction func facebookBtnAction(_ sender: UIButton) {
+        facebookActionHandler?()
     }
+    
     @IBAction func googleBtnAction(_ sender: UIButton) {
+        googleActionHandler?()
     }
     
     

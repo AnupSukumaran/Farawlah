@@ -13,4 +13,6 @@ extension String {
     static var message = "Already in the list."
     static var ok = "OK"
     static var kSession = "userInSession"
+    static var staticUserEmailAddress = "admin@g.com"
+    static var staticPassword = "Admin"
 }
