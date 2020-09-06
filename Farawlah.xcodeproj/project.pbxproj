@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		188CED362505613F0031B076 /* SASCustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CED352505613F0031B076 /* SASCustomAlertView.swift */; };
+		188CED38250561790031B076 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CED37250561790031B076 /* Constants.swift */; };
 		18EE719B25052A6E00F8FA73 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE719A25052A6E00F8FA73 /* MainViewController.swift */; };
 		18EE719F2505339200F8FA73 /* UIViewCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE719E2505339200F8FA73 /* UIViewCustom.swift */; };
 		18EE71A12505339B00F8FA73 /* UIButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE71A02505339B00F8FA73 /* UIButtonCustom.swift */; };
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		188CED352505613F0031B076 /* SASCustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SASCustomAlertView.swift; sourceTree = "<group>"; };
+		188CED37250561790031B076 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		18EE719A25052A6E00F8FA73 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		18EE719E2505339200F8FA73 /* UIViewCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewCustom.swift; sourceTree = "<group>"; };
 		18EE71A02505339B00F8FA73 /* UIButtonCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonCustom.swift; sourceTree = "<group>"; };
@@ -97,8 +101,10 @@
 		18EE719C25052A8500F8FA73 /* Exts */ = {
 			isa = PBXGroup;
 			children = (
+				188CED352505613F0031B076 /* SASCustomAlertView.swift */,
 				18EE71A9250545D400F8FA73 /* NSObject+Ext.swift */,
 				18EE71B12505553500F8FA73 /* UIViewController+Ext.swift */,
+				188CED37250561790031B076 /* Constants.swift */,
 			);
 			path = Exts;
 			sourceTree = "<group>";
@@ -356,10 +362,12 @@
 				18EE719F2505339200F8FA73 /* UIViewCustom.swift in Sources */,
 				18EE71B0250551D300F8FA73 /* PopUpViewController.swift in Sources */,
 				18EE71A6250545B300F8FA73 /* LoginTableViewCell.swift in Sources */,
+				188CED362505613F0031B076 /* SASCustomAlertView.swift in Sources */,
 				18F1828D250528F500264EFC /* AppDelegate.swift in Sources */,
 				18EE71A12505339B00F8FA73 /* UIButtonCustom.swift in Sources */,
 				18EE71A42505459900F8FA73 /* ItemTableViewCell.swift in Sources */,
 				18EE71A8250545C000F8FA73 /* RegisterTableViewCell.swift in Sources */,
+				188CED38250561790031B076 /* Constants.swift in Sources */,
 				18F1828F250528F500264EFC /* SceneDelegate.swift in Sources */,
 				18EE71AA250545D400F8FA73 /* NSObject+Ext.swift in Sources */,
 			);

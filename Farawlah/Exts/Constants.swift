@@ -1,5 +1,5 @@
 //
-//  NSObject+Ext.swift
+//  Constants.swift
 //  Farawlah
 //
 //  Created by Sukumar Anup Sukumaran on 06/09/20.
@@ -7,12 +7,9 @@
 //
 
 import Foundation
-import UIKit
 
-extension NSObject {
-    
-    static var identifier: String {
-        return String(describing: self)
-    }
-    
+extension String {
+    static var appName = "Farawlah"
+    static var message = "Already in the list."
+    static var ok = "OK"
 }

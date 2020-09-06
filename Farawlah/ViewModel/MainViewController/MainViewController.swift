@@ -47,6 +47,15 @@ extension MainViewController {
         listViewModel.popUpControllerHandler = { [weak self] alertVC in
             self?.present(alertVC, animated: true, completion: nil)
         }
+        
+        listViewModel.tableViewReloadHandler = { [weak self]  in
+            self?.listView.reloadData()
+        }
+        
+        listViewModel.itemDuplicationAlertHandler = { [weak self]  in
+            guard let vc = self else {return}
+            UIAlertController.showAlert(title: .appName, message: .message, buttonTitle: .ok, selfClass: vc)
+        }
     }
     
 }
@@ -54,8 +63,8 @@ extension MainViewController {
 extension MainViewController {
     
     @IBAction func addItemBtnAction(_ sender: UIBarButtonItem) {
-        //listViewModel?.popUpController()
-        moveToTextViewPopUpViewController()
+        listViewModel?.popUpController()
+        //moveToTextViewPopUpViewController()
     }
     
 }

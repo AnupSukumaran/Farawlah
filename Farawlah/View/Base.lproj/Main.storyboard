@@ -41,6 +41,9 @@
                                                 <constraint firstAttribute="trailing" secondItem="oo3-D5-3FD" secondAttribute="trailing" constant="16" id="xdr-xt-D63"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="itemlabel" destination="oo3-D5-3FD" id="f7d-Kv-c08"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="660" id="xeh-T5-NCv">
                                         <rect key="frame" x="0.0" y="81" width="414" height="660"/>
