@@ -28,6 +28,11 @@ class MainViewController: UIViewController {
         }
     }
     
+    var registerViewModel: RegisterViewModel! {
+        didSet {
+            handlersForRegisterViewModel()
+        }
+    }
    
     
     @IBAction func tapAction(_ sender: UITapGestureRecognizer) {
@@ -63,6 +68,7 @@ extension MainViewController {
     func setUpViewModels() {
         configListViewModel()
         configLoginViewModel()
+        configRegisterViewModel()
     }
     
     func configListViewModel() {
@@ -82,6 +88,15 @@ extension MainViewController {
         KeyBrd().regKBNotific(listView, 120)
     }
     
+    func configRegisterViewModel() {
+       guard let li = registerViewModel else { return }
+       listView.delegate = li
+       listView.dataSource = li
+       li.viewHeight = listView.frame.height
+       KeyBrd().scrollAdjustment(listView, top: -64)
+       KeyBrd().regKBNotific(listView, 120)
+    }
+    
     
     /// This function give actions to all the handers from ListViewModel
     func handlersForViewModel(){
@@ -99,28 +114,22 @@ extension MainViewController {
         }
         
         listViewModel.loginVCHandler = { [weak self] in
-            self?.callMainViewController()
+            self?.callMainViewController(forLoginPage: true)
         }
     }
     
     /// This function give actions to all the handers from LoginViewModel
     func handlersForLoginViewModel() {
         
-        loginViewModel.newUserSignUpBtnActionHandler = { [weak self] in
-
+        loginViewModel.newUserSignUpBtnActionHandler = {[weak self] in
+            self?.callMainViewController(forLoginPage: false)
         }
 
-        loginViewModel.forgotBtnActionHandler = { [weak self] in
-
-        }
+        loginViewModel.forgotBtnActionHandler = {}
         
-        loginViewModel.facebookActionHandler = { [weak self] in
+        loginViewModel.facebookActionHandler = {}
 
-        }
-
-        loginViewModel.googleActionHandler = { [weak self] in
-
-        }
+        loginViewModel.googleActionHandler = {}
         
         loginViewModel.validation = { [weak self] success in
             guard let vc = self else {return}
@@ -132,6 +141,32 @@ extension MainViewController {
         loginViewModel.loginSuccess = { [weak self] in
             self?.dismiss(animated: false, completion: nil)
         }
+    }
+    
+    func handlersForRegisterViewModel() {
+        
+        registerViewModel.gobackToLoginBtnnHandler = { [weak self] in
+            guard let vc = self else {return}
+            vc.dismiss(animated: true, completion: nil)
+        }
+
+        registerViewModel.forgotBtnActionHandler = {}
+        
+        registerViewModel.facebookActionHandler = {}
+
+        registerViewModel.googleActionHandler = {}
+        
+        registerViewModel.validation = { [weak self] success in
+            guard let vc = self else {return}
+            success ?
+            (self?.registerViewModel.callingRegistrationAPI()) :
+            (UIAlertController.showAlert(title: .appName, message: .credentialMsg, buttonTitle: .ok, selfClass: vc))
+        }
+        
+        registerViewModel.registrationSuccess = {  [weak self] in
+            self?.navigationController?.popToRootViewController(animated: true)
+        }
+        
     }
     
 }

@@ -24,7 +24,6 @@ class LoginTableViewCell: UITableViewCell {
     var textFields = [UITextField]()
     var sasValidator: SASValidator?
     var newUserSignUpBtnActionHandler:(() -> ())?
-    //var loginBtnActionHandler: (() -> ())?
     var forgotBtnActionHandler: (() ->())?
     var facebookActionHandler: (() -> ())?
     var googleActionHandler: (() -> ())?

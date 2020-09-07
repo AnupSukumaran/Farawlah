@@ -20,18 +20,12 @@ extension UIViewController {
         return UIStoryboard(name: "Main", bundle: Bundle.main)
     }
     
-    func moveToTextViewPopUpViewController() {
-        if let popOverVC = mainStoryboard().instantiateViewController(withIdentifier: PopUpViewController.identifier) as? PopUpViewController {
-            addChild(popOverVC)
-            view.addSubview(popOverVC.view)
-            popOverVC.view.center = CGPoint(x: view.bounds.midX, y: view.bounds.midY)
-            popOverVC.didMove(toParent: self)
-        }
-    }
     
-    func callMainViewController() {
+    func callMainViewController(forLoginPage: Bool) {
         guard let vc = mainStoryboard().instantiateViewController(withIdentifier: MainViewController.identifier) as? MainViewController else {fatalError("MainViewController not found")}
-        vc.loginViewModel = LoginViewModel(loader: UIViewController.loader(vc))
+        forLoginPage ?
+            (vc.loginViewModel = LoginViewModel(loader: UIViewController.loader(vc))) :
+            (vc.registerViewModel = RegisterViewModel(loader: UIViewController.loader(vc)))
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: false, completion: nil)
     }

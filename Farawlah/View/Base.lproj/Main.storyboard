@@ -174,7 +174,7 @@
                                                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RW6-GE-aUC">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="266" height="55"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                    <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                                                                 </textField>
                                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eVl-2E-WbB" customClass="UIViewCustom" customModule="Farawlah" customModuleProvider="target">
                                                                                     <rect key="frame" x="282" y="7.5" width="40" height="40"/>
@@ -449,7 +449,7 @@
                                             <outlet property="passwordTxtField" destination="RW6-GE-aUC" id="nEV-AK-0Ii"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="706" id="LzG-6S-hDK">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RegisterTableViewCell" rowHeight="706" id="LzG-6S-hDK" customClass="RegisterTableViewCell" customModule="Farawlah" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="181" width="414" height="706"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LzG-6S-hDK" id="e7l-mD-Y5a">
@@ -480,6 +480,9 @@
                                                                     <state key="normal" title="YOU HAVE AN ACC! LOGIN NOW">
                                                                         <color key="titleColor" red="0.58039215690000001" green="0.58039215690000001" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     </state>
+                                                                    <connections>
+                                                                        <action selector="gobackToLoginBtnnAction:" destination="LzG-6S-hDK" eventType="touchUpInside" id="fvR-oQ-j30"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                         </stackView>
@@ -575,7 +578,7 @@
                                                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kk5-ga-7Q4">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="266" height="55"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                    <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                                                                 </textField>
                                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ySx-Zo-aRA" customClass="UIViewCustom" customModule="Farawlah" customModuleProvider="target">
                                                                                     <rect key="frame" x="282" y="7.5" width="40" height="40"/>
@@ -655,7 +658,7 @@
                                                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zvs-MJ-ylK">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="266" height="55"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                    <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                                                    <textInputTraits key="textInputTraits" textContentType="tel"/>
                                                                                 </textField>
                                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NQe-Ry-Pkm" customClass="UIViewCustom" customModule="Farawlah" customModuleProvider="target">
                                                                                     <rect key="frame" x="282" y="7.5" width="40" height="40"/>
@@ -735,7 +738,7 @@
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGNUP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGc-gQ-3Y7">
                                                                                     <rect key="frame" x="0.0" y="17.5" width="330" height="20.5"/>
                                                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                             </subviews>
@@ -773,8 +776,11 @@
                                                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBonds" value="NO"/>
                                                                             </userDefinedRuntimeAttributes>
                                                                         </view>
-                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFw-cV-tMG">
+                                                                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFw-cV-tMG">
                                                                             <rect key="frame" x="0.0" y="0.0" width="352" height="55"/>
+                                                                            <connections>
+                                                                                <action selector="signUpBtnAction:" destination="LzG-6S-hDK" eventType="touchUpInside" id="Xqb-aA-N3w"/>
+                                                                            </connections>
                                                                         </button>
                                                                     </subviews>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -843,6 +849,10 @@
                                                                         </stackView>
                                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RjA-RG-5Nl">
                                                                             <rect key="frame" x="0.0" y="0.0" width="228" height="50"/>
+                                                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <connections>
+                                                                                <action selector="acceptTermAndConBtnAction:" destination="LzG-6S-hDK" eventType="touchUpInside" id="NXl-th-bNe"/>
+                                                                            </connections>
                                                                         </button>
                                                                     </subviews>
                                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -888,6 +898,9 @@
                                                                             <real key="value" value="3"/>
                                                                         </userDefinedRuntimeAttribute>
                                                                     </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="facebookBtnAction:" destination="LzG-6S-hDK" eventType="touchUpInside" id="n7u-iV-Hns"/>
+                                                                    </connections>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cY-oX-yUz" customClass="UIButtonCustom" customModule="Farawlah" customModuleProvider="target">
                                                                     <rect key="frame" x="302" y="0.0" width="50" height="50"/>
@@ -916,6 +929,9 @@
                                                                             <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </userDefinedRuntimeAttribute>
                                                                     </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="googleBtnAction:" destination="LzG-6S-hDK" eventType="touchUpInside" id="AW7-Wo-g6J"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                             <constraints>
@@ -937,6 +953,20 @@
                                                 <constraint firstItem="tBn-1X-LOI" firstAttribute="leading" secondItem="e7l-mD-Y5a" secondAttribute="leading" id="tB9-Ab-xhY"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="SignUpLb" destination="B1g-Uo-sUx" id="gtW-6m-q8v"/>
+                                            <outlet property="acceptTermAndConBtn" destination="RjA-RG-5Nl" id="A6p-Se-daD"/>
+                                            <outlet property="emailTxtField" destination="uic-Cx-2rd" id="hAx-Ap-ayd"/>
+                                            <outlet property="facebookBtn" destination="v6R-EV-15b" id="m47-Jv-gCI"/>
+                                            <outlet property="gobackToLoginBtn" destination="JiO-32-Jxk" id="J0b-0f-6ei"/>
+                                            <outlet property="googleBtn" destination="8cY-oX-yUz" id="yfz-P8-Dt9"/>
+                                            <outlet property="headImageView" destination="vHD-Rt-rl7" id="Vso-Kj-Xxw"/>
+                                            <outlet property="passwordTxtField" destination="kk5-ga-7Q4" id="VmT-pP-v7A"/>
+                                            <outlet property="phoneNumTxtField" destination="zvs-MJ-ylK" id="fgB-mt-ERu"/>
+                                            <outlet property="radioBtnImgView" destination="pER-8b-xa7" id="yJw-sV-0ju"/>
+                                            <outlet property="signUpBtn" destination="lFw-cV-tMG" id="9TL-5b-NC4"/>
+                                            <outlet property="signUpLB" destination="fGc-gQ-3Y7" id="b97-yR-RZ6"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
