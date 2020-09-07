@@ -87,6 +87,8 @@ extension MainViewController {
         guard let li = loginViewModel else { return }
         listView.delegate = li
         listView.dataSource = li
+        listView.rowHeight = UITableView.automaticDimension
+        listView.estimatedRowHeight = 53
         KeyBrd().scrollAdjustment(listView, top: -64)
         KeyBrd().regKBNotific(listView, 120)
         navigationController?.navigationBar.isHidden = true
@@ -96,6 +98,8 @@ extension MainViewController {
        guard let li = registerViewModel else { return }
        listView.delegate = li
        listView.dataSource = li
+        listView.rowHeight = UITableView.automaticDimension
+        listView.estimatedRowHeight = 53
        KeyBrd().scrollAdjustment(listView, top: -64)
        KeyBrd().regKBNotific(listView, 120)
        navigationController?.navigationBar.isHidden = true
@@ -163,7 +167,10 @@ extension MainViewController {
         registerViewModel.validation = { [weak self] success in
             guard let vc = self else {return}
             success ?
+            //MARK: Calling Registration API
             (self?.registerViewModel.callingRegistrationAPI()) :
+                
+            //MARK: If Validation failed
             (UIAlertController.showAlert(title: .appName, message: .credentialMsg, buttonTitle: .ok, selfClass: vc))
         }
         

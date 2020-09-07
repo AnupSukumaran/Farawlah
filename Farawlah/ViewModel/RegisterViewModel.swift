@@ -32,9 +32,7 @@ extension RegisterViewModel {
         loader.startAnimating()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             self.loader.stopAnimating()
-          //  let userData = UserModel(userid: 5567434, rolename: "admin", roleid: 22, emailAddress: "admin@g.com")
-//            guard let userID = userData.userid else {return}
-//            UserDefaults.standard.set(userID, forKey: .kSession)
+            UserDefaults.standard.set(5567434, forKey: .kSession)
             self.registrationSuccess?()
             
         }

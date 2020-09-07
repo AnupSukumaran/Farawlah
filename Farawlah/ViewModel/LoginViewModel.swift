@@ -40,7 +40,6 @@ extension LoginViewModel {
                     case .success(let data):
                         self.userData = data.userData
                         guard let userID = self.userData?.userId else {return}
-                        print("userID = \(userID)")
                         UserDefaults.standard.set(userID, forKey: .kSession)
                         self.loginSuccess?()
                     
