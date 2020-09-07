@@ -32,19 +32,7 @@ extension NSObject {
         
         return nil
     }
-    
-//    func parse<T: Decodable>(jsonData: Data,dataType: T, handler: (Results<T>) -> ()) {
-//
-//        do {
-//            let decodedData = try JSONDecoder().decode(T.self,from: jsonData)
-//            handler(.success(decodedData))
-//
-//        } catch {
-//            handler(.failure(errorStr: error.localizedDescription))
-//        }
-//
-//
-//    }
+
     
     func parse(jsonData: Data, handler: (Results<ModelResponse>) -> ()) {
           
