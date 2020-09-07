@@ -77,6 +77,7 @@ extension MainViewController {
         listView.dataSource = li
         listView.rowHeight = UITableView.automaticDimension
         listView.estimatedRowHeight = 53
+        navigationController?.navigationBar.isHidden = false
     }
     
     func configLoginViewModel() {
@@ -86,6 +87,7 @@ extension MainViewController {
         li.viewHeight = listView.frame.height
         KeyBrd().scrollAdjustment(listView, top: -64)
         KeyBrd().regKBNotific(listView, 120)
+        navigationController?.navigationBar.isHidden = true
     }
     
     func configRegisterViewModel() {
@@ -95,6 +97,7 @@ extension MainViewController {
        li.viewHeight = listView.frame.height
        KeyBrd().scrollAdjustment(listView, top: -64)
        KeyBrd().regKBNotific(listView, 120)
+        navigationController?.navigationBar.isHidden = true
     }
     
     
@@ -114,7 +117,7 @@ extension MainViewController {
         }
         
         listViewModel.loginVCHandler = { [weak self] in
-            self?.callMainViewController(forLoginPage: true)
+            self?.callMainViewController(forLoginPage: true, animated: false)
         }
     }
     
@@ -122,7 +125,7 @@ extension MainViewController {
     func handlersForLoginViewModel() {
         
         loginViewModel.newUserSignUpBtnActionHandler = {[weak self] in
-            self?.callMainViewController(forLoginPage: false)
+            self?.callMainViewController(forLoginPage: false, animated: true)
         }
 
         loginViewModel.forgotBtnActionHandler = {}
@@ -139,7 +142,7 @@ extension MainViewController {
         }
         
         loginViewModel.loginSuccess = { [weak self] in
-            self?.dismiss(animated: false, completion: nil)
+            self?.navigationController?.popViewController(animated: true)
         }
     }
     
@@ -147,7 +150,7 @@ extension MainViewController {
         
         registerViewModel.gobackToLoginBtnnHandler = { [weak self] in
             guard let vc = self else {return}
-            vc.dismiss(animated: true, completion: nil)
+            vc.navigationController?.popViewController(animated: true)
         }
 
         registerViewModel.forgotBtnActionHandler = {}

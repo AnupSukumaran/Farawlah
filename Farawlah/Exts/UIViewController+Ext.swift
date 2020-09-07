@@ -21,13 +21,15 @@ extension UIViewController {
     }
     
     
-    func callMainViewController(forLoginPage: Bool) {
+    func callMainViewController(forLoginPage: Bool, animated: Bool) {
         guard let vc = mainStoryboard().instantiateViewController(withIdentifier: MainViewController.identifier) as? MainViewController else {fatalError("MainViewController not found")}
         forLoginPage ?
             (vc.loginViewModel = LoginViewModel(loader: UIViewController.loader(vc))) :
             (vc.registerViewModel = RegisterViewModel(loader: UIViewController.loader(vc)))
         vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: false, completion: nil)
+       
+       navigationController?.pushViewController(vc, animated: animated)
+        //present(vc, animated: false, completion: nil)
     }
     
     func showAnimate() {
