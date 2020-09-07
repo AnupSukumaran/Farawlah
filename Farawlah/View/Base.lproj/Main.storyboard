@@ -803,10 +803,10 @@
                                                                             <real key="value" value="26"/>
                                                                         </userDefinedRuntimeAttribute>
                                                                         <userDefinedRuntimeAttribute type="color" keyPath="startColor">
-                                                                            <color key="value" red="0.91606169940000004" green="0.33193624020000001" blue="0.48365372420000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <color key="value" red="0.91764705882352937" green="0.33333333333333331" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </userDefinedRuntimeAttribute>
                                                                         <userDefinedRuntimeAttribute type="color" keyPath="endColor">
-                                                                            <color key="value" red="0.92748421430000005" green="0.56004786490000003" blue="0.2476339638" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <color key="value" red="0.92941176470588238" green="0.5607843137254902" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </userDefinedRuntimeAttribute>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="angle">
                                                                             <real key="value" value="1"/>
@@ -1041,7 +1041,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bg1" width="1000" height="667"/>
+        <image name="bg1" width="1300" height="866"/>
         <image name="facebook" width="64" height="64"/>
         <image name="google" width="64" height="64"/>
         <image name="location" width="24" height="24"/>
