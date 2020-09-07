@@ -14,16 +14,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        if let navVC = window?.rootViewController as? UINavigationController {
-           if let vc = navVC.topViewController as? MainViewController {
-               vc.listViewModel = ListViewModel()
-           }
-        }
-        
+        injectViewModelToRootViewController(window: window)
         return true
     }
-
+    
     // MARK: UISceneSession Lifecycle
 
     @available(iOS 13.0, *)

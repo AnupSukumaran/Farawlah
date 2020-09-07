@@ -13,7 +13,7 @@ import SASLoaderPod
 extension UIViewController {
     
     static let loader: (UIViewController) -> (LoaderView) = { (vc) in
-        return LoaderView(callOn: vc, type: .lineScale, color: .red, padding: 20)
+        return LoaderView(callOn: vc, type: .lineScale, color: .red, padding: 25)
     }
     
     func mainStoryboard() -> UIStoryboard {

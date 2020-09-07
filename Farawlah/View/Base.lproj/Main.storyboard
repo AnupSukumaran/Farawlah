@@ -45,15 +45,15 @@
                                             <outlet property="itemlabel" destination="oo3-D5-3FD" id="f7d-Kv-c08"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LoginTableViewCell" rowHeight="632" id="xeh-T5-NCv" customClass="LoginTableViewCell" customModule="Farawlah" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="81" width="414" height="632"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LoginTableViewCell" rowHeight="20" id="xeh-T5-NCv" customClass="LoginTableViewCell" customModule="Farawlah" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="81" width="414" height="20"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xeh-T5-NCv" id="QEO-FL-Dvw">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="632"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="20"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="qTk-gc-Ddd">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="602"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="qTk-gc-Ddd">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg1" translatesAutoresizingMaskIntoConstraints="NO" id="oLH-4h-lWn" customClass="bg1">
                                                             <rect key="frame" x="0.0" y="0.0" width="414" height="231"/>
@@ -62,16 +62,16 @@
                                                             </constraints>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="0oo-LA-vAm">
-                                                            <rect key="frame" x="31" y="261" width="352" height="26"/>
+                                                            <rect key="frame" x="31" y="261" width="352" height="0.0"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vyx-s4-OJz">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="52" height="26"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="52" height="0.0"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHP-fy-eeY">
-                                                                    <rect key="frame" x="172" y="0.0" width="180" height="26"/>
+                                                                    <rect key="frame" x="172" y="0.0" width="180" height="0.0"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                                                     <state key="normal" title="NEW USER ? SIGNUP NOW">
                                                                         <color key="titleColor" red="0.58039215686274503" green="0.58039215686274503" blue="0.58039215686274503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -82,8 +82,8 @@
                                                                 </button>
                                                             </subviews>
                                                         </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KcA-fZ-yr5">
-                                                            <rect key="frame" x="31" y="317" width="352" height="205"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KcA-fZ-yr5">
+                                                            <rect key="frame" x="31" y="291" width="352" height="0.0"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wqk-CF-AYo" customClass="UIViewCustom" customModule="Farawlah" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="0.0" width="352" height="55"/>
@@ -245,8 +245,8 @@
                                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBonds" value="NO"/>
                                                                     </userDefinedRuntimeAttributes>
                                                                 </view>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="76y-8L-3h6" customClass="UIViewCustom" customModule="Farawlah" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="150" width="352" height="55"/>
+                                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="76y-8L-3h6" customClass="UIViewCustom" customModule="Farawlah" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="-55" width="352" height="55"/>
                                                                     <subviews>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="zQT-ML-ZnR">
                                                                             <rect key="frame" x="20" y="0.0" width="330" height="55"/>
@@ -337,12 +337,12 @@
                                                                 </view>
                                                             </subviews>
                                                         </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="v0o-dZ-1IK">
-                                                            <rect key="frame" x="31" y="552" width="352" height="50"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="v0o-dZ-1IK">
+                                                            <rect key="frame" x="31" y="0.0" width="352" height="0.0"/>
                                                             <subviews>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAs-tI-rSO">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="228" height="50"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAs-tI-rSO">
+                                                                    <rect key="frame" x="0.0" y="-50" width="228" height="50"/>
+                                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
                                                                     <state key="normal" title="Forgot Password?">
                                                                         <color key="titleColor" red="0.58039215690000001" green="0.58039215690000001" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     </state>
@@ -350,8 +350,8 @@
                                                                         <action selector="forgotBtnAction:" destination="xeh-T5-NCv" eventType="touchUpInside" id="aCs-tQ-nqi"/>
                                                                     </connections>
                                                                 </button>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mjb-0I-CbN" customClass="UIButtonCustom" customModule="Farawlah" customModuleProvider="target">
-                                                                    <rect key="frame" x="240" y="0.0" width="50" height="50"/>
+                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mjb-0I-CbN" customClass="UIButtonCustom" customModule="Farawlah" customModuleProvider="target">
+                                                                    <rect key="frame" x="240" y="-50" width="50" height="50"/>
                                                                     <color key="backgroundColor" red="0.31222310660000002" green="0.54324764010000004" blue="0.97881561520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="50" id="o5I-a1-gX6"/>
@@ -385,8 +385,8 @@
                                                                         <action selector="facebookBtnAction:" destination="xeh-T5-NCv" eventType="touchUpInside" id="l0M-NN-2Wr"/>
                                                                     </connections>
                                                                 </button>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPu-fu-LoU" customClass="UIButtonCustom" customModule="Farawlah" customModuleProvider="target">
-                                                                    <rect key="frame" x="302" y="0.0" width="50" height="50"/>
+                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPu-fu-LoU" customClass="UIButtonCustom" customModule="Farawlah" customModuleProvider="target">
+                                                                    <rect key="frame" x="302" y="-50" width="50" height="50"/>
                                                                     <color key="backgroundColor" red="0.94417470690000005" green="0.58055394890000001" blue="0.2003090978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
@@ -451,7 +451,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RegisterTableViewCell" rowHeight="737" id="LzG-6S-hDK" customClass="RegisterTableViewCell" customModule="Farawlah" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="713" width="414" height="737"/>
+                                        <rect key="frame" x="0.0" y="101" width="414" height="737"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LzG-6S-hDK" id="e7l-mD-Y5a">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="737"/>
@@ -466,13 +466,13 @@
                                                                 <constraint firstAttribute="height" constant="231" id="ADx-iu-sWm"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="o8F-XB-72o">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="o8F-XB-72o">
                                                             <rect key="frame" x="31" y="261" width="352" height="29"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGNUP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1g-Uo-sUx">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGNUP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="B1g-Uo-sUx">
                                                                     <rect key="frame" x="0.0" y="0.0" width="64" height="29"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JiO-32-Jxk">
@@ -480,6 +480,7 @@
                                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                                                     <state key="normal" title="YOU HAVE AN ACC! LOGIN NOW">
                                                                         <color key="titleColor" red="0.58039215690000001" green="0.58039215690000001" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
                                                                     </state>
                                                                     <connections>
                                                                         <action selector="gobackToLoginBtnnAction:" destination="LzG-6S-hDK" eventType="touchUpInside" id="fvR-oQ-j30"/>
@@ -839,13 +840,12 @@
                                                                                         <constraint firstAttribute="width" constant="20" id="hzF-aB-h6q"/>
                                                                                     </constraints>
                                                                                 </imageView>
-                                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsz-J7-xKK">
-                                                                                    <rect key="frame" x="25" y="8.5" width="203" height="33"/>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accept Terms &amp; Condition" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="DRD-lL-lwD">
+                                                                                    <rect key="frame" x="25" y="15" width="203" height="20.5"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                                    <state key="normal" title="Accept Terms &amp; Condition">
-                                                                                        <color key="titleColor" red="0.58039215690000001" green="0.58039215690000001" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                                    </state>
-                                                                                </button>
+                                                                                    <color key="textColor" red="0.58039215690000001" green="0.58039215690000001" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
                                                                             </subviews>
                                                                         </stackView>
                                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RjA-RG-5Nl">
@@ -988,16 +988,16 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Farawlah" id="cOJ-2v-IkO">
-                        <barButtonItem key="leftBarButtonItem" title="Log Out" id="S1V-hC-Ztb">
-                            <color key="tintColor" red="0.91764705879999997" green="0.36078431370000003" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <action selector="logOut:" destination="BYZ-38-t0r" id="M9v-TC-Zjg"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="X2w-vg-LqS">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="X2w-vg-LqS">
                             <color key="tintColor" red="0.91764705879999997" green="0.36078431370000003" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="addItemBtnAction:" destination="BYZ-38-t0r" id="Ue5-jy-QEq"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="S1V-hC-Ztb">
+                            <color key="tintColor" red="0.91764705879999997" green="0.36078431370000003" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="logOut:" destination="BYZ-38-t0r" id="M9v-TC-Zjg"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

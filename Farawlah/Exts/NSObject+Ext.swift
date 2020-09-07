@@ -20,6 +20,15 @@ extension NSObject {
         return String(describing: self)
     }
     
+    /// Function that injects the viewmodel to the rootview controller
+    func injectViewModelToRootViewController(window: UIWindow?) {
+       if let navVC = window?.rootViewController as? UINavigationController {
+           if let vc = navVC.topViewController as? MainViewController {
+               vc.listViewModel = ListViewModel()
+           }
+       }
+    }
+    
     
     func readLocalFile(forName name: String) -> Data? {
         do {

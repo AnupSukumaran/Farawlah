@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ListViewModel: NSObject {
     var itemsArr = [String]()
     var popUpControllerHandler: ((_ alertController: UIAlertController) -> ())?
@@ -21,6 +22,8 @@ class ListViewModel: NSObject {
 
 extension ListViewModel {
     
+    
+    /// This function checks if the user is logged in
     func checkUserInSession() {
         guard let userID = UserDefaults.standard.value(forKey: .kSession) else {
             self.loginVCHandler?()
@@ -38,14 +41,16 @@ extension ListViewModel {
     
     }
     
+    /// This function is used to logout and clear the session.
     func clearSession() {
         UserDefaults.standard.removeObject(forKey: .kSession)
          self.loginVCHandler?()
     }
     
+    // AlertViewController with UITextFields
     func popUpController() {
 
-        let alertController = UIAlertController(title: "Add New Name", message: "", preferredStyle: UIAlertController.Style.alert)
+        let alertController = UIAlertController(title: "Add new item", message: "", preferredStyle: UIAlertController.Style.alert)
         
         alertController.addTextField { (textField : UITextField!) -> Void in
             textField.placeholder = "Enter Item"
@@ -72,7 +77,9 @@ extension ListViewModel {
     }
 }
 
+/// UITableView protocol confirmations
 extension ListViewModel: UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itemsArr.count
     }

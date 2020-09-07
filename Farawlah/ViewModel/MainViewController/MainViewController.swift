@@ -45,6 +45,7 @@ class MainViewController: UIViewController {
     
 }
 
+//MARK: Life cycle
 extension MainViewController {
     
     override func viewDidLoad() {
@@ -67,6 +68,7 @@ extension MainViewController {
 
 }
 
+//MARK: Functions
 extension MainViewController {
     
     func setUpViewModels() {
@@ -75,6 +77,8 @@ extension MainViewController {
         configRegisterViewModel()
     }
     
+    
+    /// config func for ListViewModel
     func configListViewModel() {
         guard let li = listViewModel else { return }
         listView.delegate = li
@@ -83,6 +87,7 @@ extension MainViewController {
         listView.estimatedRowHeight = 53
     }
     
+    /// config func for LoginViewModel
     func configLoginViewModel() {
         guard let li = loginViewModel else { return }
         listView.delegate = li
@@ -95,20 +100,21 @@ extension MainViewController {
         navigationController?.navigationBar.isHidden = true
     }
     
+    /// config func for RegisterViewModel
     func configRegisterViewModel() {
-       guard let li = registerViewModel else { return }
-       listView.delegate = li
-       listView.dataSource = li
+        guard let li = registerViewModel else { return }
+        listView.delegate = li
+        listView.dataSource = li
         listView.rowHeight = UITableView.automaticDimension
         listView.estimatedRowHeight = 53
         listView.separatorStyle = .none
-       KeyBrd().scrollAdjustment(listView, top: -64)
-       KeyBrd().regKBNotific(listView, 120)
-       navigationController?.navigationBar.isHidden = true
+        KeyBrd().scrollAdjustment(listView, top: -64)
+        KeyBrd().regKBNotific(listView, 120)
+        navigationController?.navigationBar.isHidden = true
     }
     
     
-    /// This function give actions to all the handers from ListViewModel
+    /// This function give actions to all the handlers from ListViewModel
     func handlersForViewModel(){
         listViewModel.popUpControllerHandler = { [weak self] alertVC in
             self?.present(alertVC, animated: true, completion: nil)
@@ -149,10 +155,11 @@ extension MainViewController {
         }
         
         loginViewModel.loginSuccess = { [weak self] in
-            self?.navigationController?.popViewController(animated: true)
+            self?.navigationController?.popViewController(animated: false)
         }
     }
     
+    /// This function give actions to all the handers from RegisterViewModel
     func handlersForRegisterViewModel() {
         
         registerViewModel.gobackToLoginBtnnHandler = { [weak self] in
@@ -184,13 +191,11 @@ extension MainViewController {
     
 }
 
+//MARK: UIAction Functions 
 extension MainViewController {
     
     @IBAction func addItemBtnAction(_ sender: UIBarButtonItem) {
         listViewModel?.popUpController()
-        //moveToTextViewPopUpViewController()
     }
-    
-    
-    
+
 }

@@ -80,7 +80,7 @@ extension RegisterTableViewCell: SASValidatorDelegate {
         
         validator.registerField(emailTxtField, rules: [RequiredRule(message: "Please enter your email address"), EmailRule(message: "Email address not valid")])
 
-        validator.registerField(passwordTxtField, rules: [RequiredRule(message: "Please enter your password"), PasswordRule(message: "Password must have 8 characters with first letter caps")])
+        validator.registerField(passwordTxtField, rules: [RequiredRule(message: "Please enter your password")])
         
         validator.registerField(phoneNumTxtField, rules: [RequiredRule(message: "Please enter your phone number.")])
         

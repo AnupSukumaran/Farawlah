@@ -15,11 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        if let navVC = window?.rootViewController as? UINavigationController {
-           if let vc = navVC.topViewController as? MainViewController {
-               vc.listViewModel = ListViewModel()
-           }
-        }
+        injectViewModelToRootViewController(window: window)
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 

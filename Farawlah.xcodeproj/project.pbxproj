@@ -232,11 +232,11 @@
 		18F182BE2505299C00264EFC /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				18EE71A22505457A00F8FA73 /* CellClass */,
-				18F182C0250529D600264EFC /* MainViewController */,
 				18EE71AB2505465B00F8FA73 /* ListViewModel.swift */,
 				188CED39250563CD0031B076 /* LoginViewModel.swift */,
 				1860F94A2505CD3400441055 /* RegisterViewModel.swift */,
+				18F182C0250529D600264EFC /* MainViewController */,
+				18EE71A22505457A00F8FA73 /* CellClass */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -720,7 +720,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RDRMVW96A6;
+				DEVELOPMENT_TEAM = 3P3J8AFD59;
 				INFOPLIST_FILE = Farawlah/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -730,7 +730,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.TechTonic.Farawlah;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -750,7 +750,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.TechTonic.Farawlah;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

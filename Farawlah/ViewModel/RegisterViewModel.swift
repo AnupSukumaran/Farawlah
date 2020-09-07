@@ -28,6 +28,8 @@ class RegisterViewModel: NSObject {
 }
 
 extension RegisterViewModel {
+    
+    /// Registration API Call
     func callingRegistrationAPI() {
         loader.startAnimating()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
@@ -41,7 +43,7 @@ extension RegisterViewModel {
     
 }
 
-
+/// UITableView protocol confirmations
 extension RegisterViewModel: UITableViewDataSource, UITableViewDelegate {
 
     
@@ -66,6 +68,7 @@ extension RegisterViewModel: UITableViewDataSource, UITableViewDelegate {
     
 }
 
+/// UITextFields protocol confirmations
 extension RegisterViewModel: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()

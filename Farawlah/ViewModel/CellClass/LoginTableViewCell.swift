@@ -55,16 +55,19 @@ class LoginTableViewCell: UITableViewCell {
     }
     
     @IBAction func forgotBtnAction(_ sender: UIButton) {
+        textFields.forEach{$0.resignFirstResponder()}
         forgotBtnActionHandler?()
     }
     
     @IBAction func facebookBtnAction(_ sender: UIButton) {
         sender.bounce()
+        textFields.forEach{$0.resignFirstResponder()}
         facebookActionHandler?()
     }
     
     @IBAction func googleBtnAction(_ sender: UIButton) {
         sender.bounce()
+        textFields.forEach{$0.resignFirstResponder()}
         googleActionHandler?()
     }
     
@@ -76,7 +79,7 @@ extension LoginTableViewCell: SASValidatorDelegate {
         
         validator.registerField(emailTxtField, rules: [RequiredRule(message: "Please enter your email address"), EmailRule(message: "Email address not valid")])
 
-        validator.registerField(passwordTxtField, rules: [RequiredRule(message: "Please enter your password"), PasswordRule(message: "Password must have 8 characters with first letter caps")])
+        validator.registerField(passwordTxtField, rules: [RequiredRule(message: "Please enter your password")])
         
     }
     

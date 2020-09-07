@@ -29,6 +29,8 @@ class LoginViewModel: NSObject {
 }
 
 extension LoginViewModel {
+    
+    /// Calling Login API intstead of API call used DispatchQueue delay function
     func callingLoginAPI() {
         loader.startAnimating()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
@@ -64,6 +66,7 @@ extension LoginViewModel {
     
 }
 
+/// UITableView protocol confirmations
 extension LoginViewModel: UITableViewDataSource, UITableViewDelegate {
     
     
@@ -88,6 +91,7 @@ extension LoginViewModel: UITableViewDataSource, UITableViewDelegate {
     
 }
 
+/// UITextFields protocol confirmations
 extension LoginViewModel: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
