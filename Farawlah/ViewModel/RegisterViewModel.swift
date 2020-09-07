@@ -11,7 +11,6 @@ import SASLoaderPod
 import SASValidatorPack
 
 class RegisterViewModel: NSObject {
-    var viewHeight: CGFloat = 0
     var loader: LoaderView!
     var gobackToLoginBtnnHandler:(() -> ())?
     var forgotBtnActionHandler: (() ->())?
@@ -46,10 +45,7 @@ extension RegisterViewModel {
 
 
 extension RegisterViewModel: UITableViewDataSource, UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return viewHeight
-    }
+
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1

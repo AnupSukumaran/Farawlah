@@ -54,11 +54,15 @@ extension MainViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        guard listViewModel != nil else { return }
+        navigationController?.navigationBar.isHidden = false
+    
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         listViewModel?.checkUserInSession()
+        guard listViewModel != nil else { return }
+        
     }
 
 }
@@ -77,14 +81,12 @@ extension MainViewController {
         listView.dataSource = li
         listView.rowHeight = UITableView.automaticDimension
         listView.estimatedRowHeight = 53
-        navigationController?.navigationBar.isHidden = false
     }
     
     func configLoginViewModel() {
         guard let li = loginViewModel else { return }
         listView.delegate = li
         listView.dataSource = li
-        li.viewHeight = listView.frame.height
         KeyBrd().scrollAdjustment(listView, top: -64)
         KeyBrd().regKBNotific(listView, 120)
         navigationController?.navigationBar.isHidden = true
@@ -94,10 +96,9 @@ extension MainViewController {
        guard let li = registerViewModel else { return }
        listView.delegate = li
        listView.dataSource = li
-       li.viewHeight = listView.frame.height
        KeyBrd().scrollAdjustment(listView, top: -64)
        KeyBrd().regKBNotific(listView, 120)
-        navigationController?.navigationBar.isHidden = true
+       navigationController?.navigationBar.isHidden = true
     }
     
     

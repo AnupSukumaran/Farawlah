@@ -12,8 +12,6 @@ import SASLoaderPod
 import SASValidatorPack
 
 class LoginViewModel: NSObject {
-    var viewHeight: CGFloat = 0
-    
     var newUserSignUpBtnActionHandler:(() -> ())?
     var forgotBtnActionHandler: (() ->())?
     var facebookActionHandler: (() -> ())?
@@ -46,9 +44,6 @@ extension LoginViewModel {
 
 extension LoginViewModel: UITableViewDataSource, UITableViewDelegate {
     
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return viewHeight
-//    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
