@@ -19,6 +19,8 @@ class LoginViewModel: NSObject {
     var validation: ((_ success: Bool) -> ())?
     var loginSuccess: (() -> ())?
     var loader: LoaderView!
+    var errorHandler: ((_ err: String) -> ())?
+    var userData: UserModel?
     
     override init() {}
      init(loader: LoaderView) {
@@ -31,11 +33,24 @@ extension LoginViewModel {
         loader.startAnimating()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             self.loader.stopAnimating()
-            let userData = UserModel(userid: 5567434, rolename: "admin", roleid: 22, emailAddress: "admin@g.com")
-            guard let userID = userData.userid else {return}
-            UserDefaults.standard.set(userID, forKey: .kSession)
-            self.loginSuccess?()
-            
+            if let localData = self.readLocalFile(forName: "UserInfo") {
+                
+                self.parse(jsonData: localData) { (response) in
+                    switch response {
+                    case .success(let data):
+                        self.userData = data.userData
+                        guard let userID = self.userData?.userId else {return}
+                        print("userID = \(userID)")
+                        UserDefaults.standard.set(userID, forKey: .kSession)
+                        self.loginSuccess?()
+                    
+                    case .failure(errorStr: let errStr):
+                        self.errorHandler?(errStr)
+                        
+                    }
+                }
+            }
+        
         }
     }
     
