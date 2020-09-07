@@ -22,9 +22,18 @@ class ListViewModel: NSObject {
 extension ListViewModel {
     
     func checkUserInSession() {
-        guard let userID = UserDefaults.standard.value(forKey: .kSession) as? Int, userID == .staticUserID else {
+        guard let userID = UserDefaults.standard.value(forKey: .kSession) else {
             self.loginVCHandler?()
             return
+        }
+        
+        switch userID {
+        case is Int:
+            print("Id is Int")
+        case is String:
+            print("Id is String")
+        default:
+            break
         }
     
     }

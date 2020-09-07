@@ -40,7 +40,15 @@ extension LoginViewModel {
                     case .success(let data):
                         self.userData = data.userData
                         guard let userID = self.userData?.userId else {return}
-                        UserDefaults.standard.set(userID, forKey: .kSession)
+                        switch  userID {
+                        case .intType(let idAsInt):
+                             UserDefaults.standard.set(idAsInt, forKey: .kSession)
+                            
+                        case .strType(let idAsString):
+                             UserDefaults.standard.set(idAsString, forKey: .kSession)
+                            
+                        }
+                       
                         self.loginSuccess?()
                     
                     case .failure(errorStr: let errStr):

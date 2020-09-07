@@ -9,8 +9,43 @@
 import UIKit
 import Foundation
 
+enum StrinOrInt:Decodable {
+    
+    case strType(String)
+    case intType(Int)
+    
+    init(from decoder: Decoder) throws {
+        
+        
+        if let strTypeData = try? decoder.singleValueContainer().decode(String.self) {
+            self = .strType(strTypeData)
+            return
+        }
+        
+        if let intTypeData = try? decoder.singleValueContainer().decode(Int.self) {
+            self = .intType(intTypeData)
+            return
+        }
+        
+    
+       throw StrinOrInt.missingValue
+        
+        
+    }
+    
+    public func encode(to encoder: Encoder) throws {
+         throw StrinOrInt.missingValue
+     }
+     
+    public enum StrinOrInt:Error {
+         case missingValue
+     }
+    
+    
+}
+
 struct UserModel: Decodable {
-    var userId: Int?
+    var userId: StrinOrInt?
     var roleName: String?
     var roleId: Int?
     var emailAddress: String?
@@ -26,7 +61,7 @@ struct UserModel: Decodable {
     
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        userId = try? values.decodeIfPresent(Int.self, forKey: .userid) ?? nil
+        userId = try? values.decodeIfPresent(StrinOrInt.self, forKey: .userid) ?? nil
         roleName = try? values.decodeIfPresent(String.self, forKey: .rolename) ?? nil
         roleId = try? values.decodeIfPresent(Int.self, forKey: .roleid) ?? nil
         emailAddress = try? values.decodeIfPresent(String.self, forKey: .emailAddress) ?? nil
