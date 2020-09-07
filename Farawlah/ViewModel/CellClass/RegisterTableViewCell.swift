@@ -23,6 +23,7 @@ class RegisterTableViewCell: UITableViewCell {
     @IBOutlet weak var facebookBtn: UIButton!
     @IBOutlet weak var googleBtn: UIButton!
     @IBOutlet weak var signUpLB: UILabel!
+    @IBOutlet weak var regBaseView: UIViewCustom!
     
     var textFields = [UITextField]()
     var sasValidator: SASValidator?
@@ -50,6 +51,7 @@ class RegisterTableViewCell: UITableViewCell {
     }
     
     @IBAction func signUpBtnAction(_ sender: UIButton) {
+        regBaseView.bounce()
         textFields.forEach{$0.resignFirstResponder()}
         sasValidator?.setValidator()
     }
@@ -62,10 +64,12 @@ class RegisterTableViewCell: UITableViewCell {
     }
     
     @IBAction func facebookBtnAction(_ sender: UIButton) {
+        sender.bounce()
         facebookActionHandler?()
     }
     
     @IBAction func googleBtnAction(_ sender: UIButton) {
+        sender.bounce()
         googleActionHandler?()
     }
 

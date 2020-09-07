@@ -32,6 +32,7 @@
 		18F182AF250528FC00264EFC /* FarawlahUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F182AE250528FC00264EFC /* FarawlahUITests.swift */; };
 		26ADF2A35EB4730F668A617D /* Pods_Farawlah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8698B59436C138DC934A99 /* Pods_Farawlah.framework */; };
 		6AFC2C80AB7F7B1187925B45 /* Pods_FarawlahTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BFE5B266DBE1631E9F3F3BE /* Pods_FarawlahTests.framework */; };
+		9D45989D25063DC800F94F1E /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45989C25063DC800F94F1E /* UIButton+Ext.swift */; };
 		9D6779EE2506030C002EF330 /* UserInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D6779ED2506030C002EF330 /* UserInfo.json */; };
 		D0BBD61E37449EBCACC525FA /* Pods_Farawlah_FarawlahUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE57CB3301752D706694092E /* Pods_Farawlah_FarawlahUITests.framework */; };
 /* End PBXBuildFile section */
@@ -87,6 +88,7 @@
 		674B5AF5B2F7F5B182B4BEA6 /* Pods-Farawlah.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farawlah.release.xcconfig"; path = "Target Support Files/Pods-Farawlah/Pods-Farawlah.release.xcconfig"; sourceTree = "<group>"; };
 		6C7F2D90EA7E33C5C57710A3 /* Pods-Farawlah.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farawlah.debug.xcconfig"; path = "Target Support Files/Pods-Farawlah/Pods-Farawlah.debug.xcconfig"; sourceTree = "<group>"; };
 		7E375204D3EA1B8ECA4D12BA /* Pods-FarawlahTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FarawlahTests.debug.xcconfig"; path = "Target Support Files/Pods-FarawlahTests/Pods-FarawlahTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D45989C25063DC800F94F1E /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
 		9D6779ED2506030C002EF330 /* UserInfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UserInfo.json; sourceTree = "<group>"; };
 		D3E611F7C800665B9FB10739 /* Pods-Farawlah-FarawlahUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farawlah-FarawlahUITests.release.xcconfig"; path = "Target Support Files/Pods-Farawlah-FarawlahUITests/Pods-Farawlah-FarawlahUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D7404B8A9B5BB36617FF1FFB /* Pods-FarawlahTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FarawlahTests.release.xcconfig"; path = "Target Support Files/Pods-FarawlahTests/Pods-FarawlahTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				18EE71A9250545D400F8FA73 /* NSObject+Ext.swift */,
 				18EE71B12505553500F8FA73 /* UIViewController+Ext.swift */,
 				188CED37250561790031B076 /* Constants.swift */,
+				9D45989C25063DC800F94F1E /* UIButton+Ext.swift */,
 			);
 			path = Exts;
 			sourceTree = "<group>";
@@ -529,6 +532,7 @@
 				18EE71AC2505465B00F8FA73 /* ListViewModel.swift in Sources */,
 				18EE719B25052A6E00F8FA73 /* MainViewController.swift in Sources */,
 				18EE71B22505553500F8FA73 /* UIViewController+Ext.swift in Sources */,
+				9D45989D25063DC800F94F1E /* UIButton+Ext.swift in Sources */,
 				18EE719F2505339200F8FA73 /* UIViewCustom.swift in Sources */,
 				18EE71A6250545B300F8FA73 /* LoginTableViewCell.swift in Sources */,
 				1860F94B2505CD3400441055 /* RegisterViewModel.swift in Sources */,

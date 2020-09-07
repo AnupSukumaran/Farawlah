@@ -20,6 +20,7 @@ class LoginTableViewCell: UITableViewCell {
     @IBOutlet weak var forgotBtn: UIButton!
     @IBOutlet weak var facebookBtn: UIButton!
     @IBOutlet weak var googleBtn: UIButton!
+    @IBOutlet weak var loginBtnBaseView: UIViewCustom!
     
     var textFields = [UITextField]()
     var sasValidator: SASValidator?
@@ -48,6 +49,7 @@ class LoginTableViewCell: UITableViewCell {
     }
     
     @IBAction func loginBtnAction(_ sender: UIButton) {
+        loginBtnBaseView.bounce()
         textFields.forEach{$0.resignFirstResponder()}
         sasValidator?.setValidator()
     }
@@ -57,10 +59,12 @@ class LoginTableViewCell: UITableViewCell {
     }
     
     @IBAction func facebookBtnAction(_ sender: UIButton) {
+        sender.bounce()
         facebookActionHandler?()
     }
     
     @IBAction func googleBtnAction(_ sender: UIButton) {
+        sender.bounce()
         googleActionHandler?()
     }
     

@@ -45,15 +45,15 @@
                                             <outlet property="itemlabel" destination="oo3-D5-3FD" id="f7d-Kv-c08"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LoginTableViewCell" rowHeight="96" id="xeh-T5-NCv" customClass="LoginTableViewCell" customModule="Farawlah" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="81" width="414" height="96"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LoginTableViewCell" rowHeight="632" id="xeh-T5-NCv" customClass="LoginTableViewCell" customModule="Farawlah" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="81" width="414" height="632"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xeh-T5-NCv" id="QEO-FL-Dvw">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="632"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="qTk-gc-Ddd">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="602"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg1" translatesAutoresizingMaskIntoConstraints="NO" id="oLH-4h-lWn" customClass="bg1">
                                                             <rect key="frame" x="0.0" y="0.0" width="414" height="231"/>
@@ -62,16 +62,16 @@
                                                             </constraints>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="0oo-LA-vAm">
-                                                            <rect key="frame" x="31" y="261" width="352" height="0.0"/>
+                                                            <rect key="frame" x="31" y="261" width="352" height="26"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vyx-s4-OJz">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="52" height="0.0"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="52" height="26"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHP-fy-eeY">
-                                                                    <rect key="frame" x="172" y="0.0" width="180" height="0.0"/>
+                                                                    <rect key="frame" x="172" y="0.0" width="180" height="26"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                                                     <state key="normal" title="NEW USER ? SIGNUP NOW">
                                                                         <color key="titleColor" red="0.58039215686274503" green="0.58039215686274503" blue="0.58039215686274503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -82,8 +82,8 @@
                                                                 </button>
                                                             </subviews>
                                                         </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KcA-fZ-yr5">
-                                                            <rect key="frame" x="31" y="291" width="352" height="0.0"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KcA-fZ-yr5">
+                                                            <rect key="frame" x="31" y="317" width="352" height="205"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wqk-CF-AYo" customClass="UIViewCustom" customModule="Farawlah" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="0.0" width="352" height="55"/>
@@ -245,8 +245,8 @@
                                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBonds" value="NO"/>
                                                                     </userDefinedRuntimeAttributes>
                                                                 </view>
-                                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="76y-8L-3h6" customClass="UIViewCustom" customModule="Farawlah" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="-55" width="352" height="55"/>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="76y-8L-3h6" customClass="UIViewCustom" customModule="Farawlah" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="150" width="352" height="55"/>
                                                                     <subviews>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="zQT-ML-ZnR">
                                                                             <rect key="frame" x="20" y="0.0" width="330" height="55"/>
@@ -337,11 +337,11 @@
                                                                 </view>
                                                             </subviews>
                                                         </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="v0o-dZ-1IK">
-                                                            <rect key="frame" x="31" y="66" width="352" height="0.0"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="v0o-dZ-1IK">
+                                                            <rect key="frame" x="31" y="552" width="352" height="50"/>
                                                             <subviews>
-                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAs-tI-rSO">
-                                                                    <rect key="frame" x="0.0" y="-50" width="228" height="50"/>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAs-tI-rSO">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="228" height="50"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                     <state key="normal" title="Forgot Password?">
                                                                         <color key="titleColor" red="0.58039215690000001" green="0.58039215690000001" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -350,8 +350,8 @@
                                                                         <action selector="forgotBtnAction:" destination="xeh-T5-NCv" eventType="touchUpInside" id="aCs-tQ-nqi"/>
                                                                     </connections>
                                                                 </button>
-                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mjb-0I-CbN" customClass="UIButtonCustom" customModule="Farawlah" customModuleProvider="target">
-                                                                    <rect key="frame" x="240" y="-50" width="50" height="50"/>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mjb-0I-CbN" customClass="UIButtonCustom" customModule="Farawlah" customModuleProvider="target">
+                                                                    <rect key="frame" x="240" y="0.0" width="50" height="50"/>
                                                                     <color key="backgroundColor" red="0.31222310660000002" green="0.54324764010000004" blue="0.97881561520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="50" id="o5I-a1-gX6"/>
@@ -385,8 +385,8 @@
                                                                         <action selector="facebookBtnAction:" destination="xeh-T5-NCv" eventType="touchUpInside" id="l0M-NN-2Wr"/>
                                                                     </connections>
                                                                 </button>
-                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPu-fu-LoU" customClass="UIButtonCustom" customModule="Farawlah" customModuleProvider="target">
-                                                                    <rect key="frame" x="302" y="-50" width="50" height="50"/>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPu-fu-LoU" customClass="UIButtonCustom" customModule="Farawlah" customModuleProvider="target">
+                                                                    <rect key="frame" x="302" y="0.0" width="50" height="50"/>
                                                                     <color key="backgroundColor" red="0.94417470690000005" green="0.58055394890000001" blue="0.2003090978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
@@ -444,13 +444,14 @@
                                             <outlet property="googleBtn" destination="ZPu-fu-LoU" id="K1W-PV-mWJ"/>
                                             <outlet property="headImageView" destination="oLH-4h-lWn" id="cSM-qQ-dYT"/>
                                             <outlet property="loginBtn" destination="c4s-xi-81b" id="A4x-Cg-fIt"/>
+                                            <outlet property="loginBtnBaseView" destination="76y-8L-3h6" id="elQ-xw-qMH"/>
                                             <outlet property="loginLb" destination="Vyx-s4-OJz" id="sop-FW-xXO"/>
                                             <outlet property="newUserSignUpBtn" destination="FHP-fy-eeY" id="GjP-pI-IDk"/>
                                             <outlet property="passwordTxtField" destination="RW6-GE-aUC" id="nEV-AK-0Ii"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RegisterTableViewCell" rowHeight="737" id="LzG-6S-hDK" customClass="RegisterTableViewCell" customModule="Farawlah" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="177" width="414" height="737"/>
+                                        <rect key="frame" x="0.0" y="713" width="414" height="737"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LzG-6S-hDK" id="e7l-mD-Y5a">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="737"/>
@@ -965,6 +966,7 @@
                                             <outlet property="passwordTxtField" destination="kk5-ga-7Q4" id="VmT-pP-v7A"/>
                                             <outlet property="phoneNumTxtField" destination="zvs-MJ-ylK" id="fgB-mt-ERu"/>
                                             <outlet property="radioBtnImgView" destination="pER-8b-xa7" id="yJw-sV-0ju"/>
+                                            <outlet property="regBaseView" destination="iM2-qD-LuQ" id="XOe-Fk-Xh8"/>
                                             <outlet property="signUpBtn" destination="lFw-cV-tMG" id="9TL-5b-NC4"/>
                                             <outlet property="signUpLB" destination="fGc-gQ-3Y7" id="b97-yR-RZ6"/>
                                         </connections>
