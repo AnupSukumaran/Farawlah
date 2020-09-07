@@ -1041,7 +1041,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bg1" width="626" height="417"/>
+        <image name="bg1" width="1000" height="667"/>
         <image name="facebook" width="64" height="64"/>
         <image name="google" width="64" height="64"/>
         <image name="location" width="24" height="24"/>

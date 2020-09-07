@@ -89,6 +89,7 @@ extension MainViewController {
         listView.dataSource = li
         listView.rowHeight = UITableView.automaticDimension
         listView.estimatedRowHeight = 53
+        listView.separatorStyle = .none
         KeyBrd().scrollAdjustment(listView, top: -64)
         KeyBrd().regKBNotific(listView, 120)
         navigationController?.navigationBar.isHidden = true
@@ -100,6 +101,7 @@ extension MainViewController {
        listView.dataSource = li
         listView.rowHeight = UITableView.automaticDimension
         listView.estimatedRowHeight = 53
+        listView.separatorStyle = .none
        KeyBrd().scrollAdjustment(listView, top: -64)
        KeyBrd().regKBNotific(listView, 120)
        navigationController?.navigationBar.isHidden = true
